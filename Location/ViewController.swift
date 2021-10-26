@@ -6,12 +6,12 @@
 //
 
 import UIKit
-import CoreLocation
 
 final class ViewController: UIViewController {
-
+    
     // MARK: - Outlet
-    @IBOutlet private weak var coordinateLabel: UILabel!
+    @IBOutlet private weak var addressLabel: UILabel!
+    @IBOutlet private weak var countLabel: UILabel!
     
     // MARK: - Property
     private let locationManager = LocationManager.shared
@@ -24,10 +24,10 @@ final class ViewController: UIViewController {
     
     // MARK: - Data
     private func listenLocation() {
-        locationManager.passLocation = { [weak self] location in
+        locationManager.passLocation = { [weak self] address, count in
             guard let self = self else { return }
-            self.coordinateLabel.text = "latitude = \(location.latitude) \nlongitude = \(location.longitude)"
+            self.countLabel.text = "Count Calculation Adress = " + String(count)
+            self.addressLabel.text = "address = \(address)"
         }
     }
 }
-
