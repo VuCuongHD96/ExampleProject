@@ -6,14 +6,28 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
+    // MARK: - Outlet
+    @IBOutlet private weak var coordinateLabel: UILabel!
+    
+    // MARK: - Property
+    private let locationManager = LocationManager.shared
+    
+    // MARK: - Outlet
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        listenLocation()
     }
-
-
+    
+    // MARK: - Data
+    private func listenLocation() {
+        locationManager.passLocation = { [weak self] location in
+            guard let self = self else { return }
+            self.coordinateLabel.text = "latitude = \(location.latitude) \nlongitude = \(location.longitude)"
+        }
+    }
 }
 
