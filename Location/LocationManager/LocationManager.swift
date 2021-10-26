@@ -10,25 +10,36 @@ import CoreLocation
 final class LocationManager: NSObject {
     
     // MARK: - Define
-    typealias LocationHandler = (CLLocationCoordinate2D) -> Void
+    typealias LocationHandler = (String, Int) -> Void
     
     // MARK: - Property
     static let shared = LocationManager()
     private let locationManager = CLLocationManager()
     var passLocation: LocationHandler?
+    private let geocoderManager = GeocoderManager.shared
+    var count = 0
     
     // MARK: - Init
     private override init() {
         super.init()
         setupLocation()
-    }    
-
+    }
+    
     // MARK: - Setup
     private func setupLocation() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
+        locationManager.distanceFilter = 20
         locationManager.startUpdatingLocation()
+    }
+    
+    private func getAdress(location: CLLocation) {
+        geocoderManager.getAddress(from: location) { [weak self] adress, error in
+            guard let self = self else { return }
+            self.count += 1
+            self.passLocation?(adress, self.count)
+        }
     }
 }
 
@@ -36,10 +47,7 @@ final class LocationManager: NSObject {
 extension LocationManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else {
-            return
-        }
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
-        passLocation?(locValue)
+        guard let location = manager.location else { return }
+        getAdress(location: location)
     }
 }

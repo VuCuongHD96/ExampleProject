@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,15 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uR-2C-WMd">
-                                <rect key="frame" x="174" y="80" width="66" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uR-2C-WMd">
+                                <rect key="frame" x="160.5" y="94" width="93" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gog-tw-Iic">
+                                <rect key="frame" x="20" y="438" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="coordinate" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9n-lX-LcR">
-                                <rect key="frame" x="166.5" y="438" width="81.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Count = " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spS-z2-LEz">
+                                <rect key="frame" x="174" y="150" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,12 +39,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.59579658965129545" green="1" blue="0.6035422187856867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="f9n-lX-LcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6XO-uk-mjh"/>
-                            <constraint firstItem="f9n-lX-LcR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Lhn-yi-bmN"/>
+                            <constraint firstItem="spS-z2-LEz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Fm-IH-Ylu"/>
+                            <constraint firstItem="7uR-2C-WMd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="AQt-xd-iSE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gog-tw-Iic" secondAttribute="trailing" constant="20" id="DVh-1Y-WU8"/>
+                            <constraint firstItem="gog-tw-Iic" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VvR-6d-t1j"/>
+                            <constraint firstItem="spS-z2-LEz" firstAttribute="top" secondItem="7uR-2C-WMd" secondAttribute="bottom" constant="26" id="i4t-aZ-ASM"/>
+                            <constraint firstItem="gog-tw-Iic" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mC1-KV-olp"/>
+                            <constraint firstItem="gog-tw-Iic" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rS8-bx-sZ6"/>
+                            <constraint firstItem="7uR-2C-WMd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tun-tF-fQv"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="coordinateLabel" destination="f9n-lX-LcR" id="vCM-iu-RRs"/>
+                        <outlet property="addressLabel" destination="gog-tw-Iic" id="VuP-ai-VO9"/>
+                        <outlet property="countLabel" destination="spS-z2-LEz" id="qqN-QP-2Xh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
