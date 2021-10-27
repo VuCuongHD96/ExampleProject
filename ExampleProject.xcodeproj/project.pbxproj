@@ -21,6 +21,12 @@
 		A423386D2727AB00002A42C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A423386C2727AB00002A42C1 /* Assets.xcassets */; };
 		A42338702727AB00002A42C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A423386E2727AB00002A42C1 /* LaunchScreen.storyboard */; };
 		A423387B2727B30C002A42C1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423387A2727B30C002A42C1 /* LocationManager.swift */; };
+		A42597E6272959C70080CBBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597E5272959C70080CBBF /* AppDelegate.swift */; };
+		A42597E8272959C70080CBBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597E7272959C70080CBBF /* SceneDelegate.swift */; };
+		A42597EA272959C70080CBBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597E9272959C70080CBBF /* ViewController.swift */; };
+		A42597ED272959C70080CBBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42597EB272959C70080CBBF /* Main.storyboard */; };
+		A42597EF272959C80080CBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42597EE272959C80080CBBF /* Assets.xcassets */; };
+		A42597F2272959C80080CBBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42597F0272959C80080CBBF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,14 @@
 		A423386F2727AB00002A42C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A42338712727AB00002A42C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A423387A2727B30C002A42C1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		A42597E3272959C70080CBBF /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42597E5272959C70080CBBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A42597E7272959C70080CBBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A42597E9272959C70080CBBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A42597EC272959C70080CBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A42597EE272959C80080CBBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A42597F1272959C80080CBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A42597F3272959C80080CBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +67,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A423385E2727AAFF002A42C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42597E0272959C70080CBBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,6 +97,7 @@
 			children = (
 				A42338472727A9D0002A42C1 /* ExampleProject */,
 				A42338622727AAFF002A42C1 /* Location */,
+				A42597E4272959C70080CBBF /* TimeTracker */,
 				A42338462727A9D0002A42C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +107,7 @@
 			children = (
 				A42338452727A9D0002A42C1 /* ExampleProject.app */,
 				A42338612727AAFF002A42C1 /* Location.app */,
+				A42597E3272959C70080CBBF /* TimeTracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,6 +139,20 @@
 				A41582F72727E68A004DB174 /* LocationManager */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		A42597E4272959C70080CBBF /* TimeTracker */ = {
+			isa = PBXGroup;
+			children = (
+				A42597E5272959C70080CBBF /* AppDelegate.swift */,
+				A42597E7272959C70080CBBF /* SceneDelegate.swift */,
+				A42597E9272959C70080CBBF /* ViewController.swift */,
+				A42597EB272959C70080CBBF /* Main.storyboard */,
+				A42597EE272959C80080CBBF /* Assets.xcassets */,
+				A42597F0272959C80080CBBF /* LaunchScreen.storyboard */,
+				A42597F3272959C80080CBBF /* Info.plist */,
+			);
+			path = TimeTracker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,13 +192,30 @@
 			productReference = A42338612727AAFF002A42C1 /* Location.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A42597E2272959C70080CBBF /* TimeTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A42597F6272959C80080CBBF /* Build configuration list for PBXNativeTarget "TimeTracker" */;
+			buildPhases = (
+				A42597DF272959C70080CBBF /* Sources */,
+				A42597E0272959C70080CBBF /* Frameworks */,
+				A42597E1272959C70080CBBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeTracker;
+			productName = TimeTracker;
+			productReference = A42597E3272959C70080CBBF /* TimeTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A423383D2727A9D0002A42C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1230;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					A42338442727A9D0002A42C1 = {
@@ -169,6 +223,9 @@
 					};
 					A42338602727AAFF002A42C1 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					A42597E2272959C70080CBBF = {
+						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
@@ -187,6 +244,7 @@
 			targets = (
 				A42338442727A9D0002A42C1 /* ExampleProject */,
 				A42338602727AAFF002A42C1 /* Location */,
+				A42597E2272959C70080CBBF /* TimeTracker */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +270,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A42597E1272959C70080CBBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42597F2272959C80080CBBF /* LaunchScreen.storyboard in Resources */,
+				A42597EF272959C80080CBBF /* Assets.xcassets in Resources */,
+				A42597ED272959C70080CBBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,6 +302,16 @@
 				A41582F92727E6EF004DB174 /* GeocoderManager.swift in Sources */,
 				A42338642727AAFF002A42C1 /* AppDelegate.swift in Sources */,
 				A42338662727AAFF002A42C1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A42597DF272959C70080CBBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A42597EA272959C70080CBBF /* ViewController.swift in Sources */,
+				A42597E6272959C70080CBBF /* AppDelegate.swift in Sources */,
+				A42597E8272959C70080CBBF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +346,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				A423386F2727AB00002A42C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A42597EB272959C70080CBBF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42597EC272959C70080CBBF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A42597F0272959C80080CBBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A42597F1272959C80080CBBF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -467,6 +561,66 @@
 			};
 			name = Release;
 		};
+		A42597F4272959C80080CBBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCAT449K7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeTracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.TimeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A42597F5272959C80080CBBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GCAT449K7M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeTracker/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.TimeTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -493,6 +647,15 @@
 			buildConfigurations = (
 				A42338732727AB00002A42C1 /* Debug */,
 				A42338742727AB00002A42C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A42597F6272959C80080CBBF /* Build configuration list for PBXNativeTarget "TimeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A42597F4272959C80080CBBF /* Debug */,
+				A42597F5272959C80080CBBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
