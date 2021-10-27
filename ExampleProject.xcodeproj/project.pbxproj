@@ -23,10 +23,13 @@
 		A423387B2727B30C002A42C1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A423387A2727B30C002A42C1 /* LocationManager.swift */; };
 		A42597E6272959C70080CBBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597E5272959C70080CBBF /* AppDelegate.swift */; };
 		A42597E8272959C70080CBBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597E7272959C70080CBBF /* SceneDelegate.swift */; };
-		A42597EA272959C70080CBBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597E9272959C70080CBBF /* ViewController.swift */; };
+		A42597EA272959C70080CBBF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597E9272959C70080CBBF /* HomeViewController.swift */; };
 		A42597ED272959C70080CBBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42597EB272959C70080CBBF /* Main.storyboard */; };
 		A42597EF272959C80080CBBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A42597EE272959C80080CBBF /* Assets.xcassets */; };
 		A42597F2272959C80080CBBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42597F0272959C80080CBBF /* LaunchScreen.storyboard */; };
+		A42597F827295B210080CBBF /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597F727295B210080CBBF /* TimerManager.swift */; };
+		A42597FF27295E080080CBBF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597FD27295E080080CBBF /* CategoryViewController.swift */; };
+		A425980027295E080080CBBF /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42597FE27295E080080CBBF /* CategoryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,11 +54,14 @@
 		A42597E3272959C70080CBBF /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42597E5272959C70080CBBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A42597E7272959C70080CBBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A42597E9272959C70080CBBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A42597E9272959C70080CBBF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A42597EC272959C70080CBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A42597EE272959C80080CBBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A42597F1272959C80080CBBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A42597F3272959C80080CBBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A42597F727295B210080CBBF /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		A42597FD27295E080080CBBF /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		A42597FE27295E080080CBBF /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,15 +150,50 @@
 		A42597E4272959C70080CBBF /* TimeTracker */ = {
 			isa = PBXGroup;
 			children = (
-				A42597E5272959C70080CBBF /* AppDelegate.swift */,
-				A42597E7272959C70080CBBF /* SceneDelegate.swift */,
-				A42597E9272959C70080CBBF /* ViewController.swift */,
-				A42597EB272959C70080CBBF /* Main.storyboard */,
+				A42597FB27295C3A0080CBBF /* Application */,
+				A42597F927295C110080CBBF /* Scenes */,
+				A42597F727295B210080CBBF /* TimerManager.swift */,
 				A42597EE272959C80080CBBF /* Assets.xcassets */,
-				A42597F0272959C80080CBBF /* LaunchScreen.storyboard */,
 				A42597F3272959C80080CBBF /* Info.plist */,
 			);
 			path = TimeTracker;
+			sourceTree = "<group>";
+		};
+		A42597F927295C110080CBBF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A42597FC27295DBE0080CBBF /* Category */,
+				A42597F0272959C80080CBBF /* LaunchScreen.storyboard */,
+				A42597FA27295C240080CBBF /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A42597FA27295C240080CBBF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A42597E9272959C70080CBBF /* HomeViewController.swift */,
+				A42597EB272959C70080CBBF /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A42597FB27295C3A0080CBBF /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A42597E5272959C70080CBBF /* AppDelegate.swift */,
+				A42597E7272959C70080CBBF /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A42597FC27295DBE0080CBBF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A42597FD27295E080080CBBF /* CategoryViewController.swift */,
+				A42597FE27295E080080CBBF /* CategoryViewController.xib */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A425980027295E080080CBBF /* CategoryViewController.xib in Resources */,
 				A42597F2272959C80080CBBF /* LaunchScreen.storyboard in Resources */,
 				A42597EF272959C80080CBBF /* Assets.xcassets in Resources */,
 				A42597ED272959C70080CBBF /* Main.storyboard in Resources */,
@@ -309,7 +351,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A42597EA272959C70080CBBF /* ViewController.swift in Sources */,
+				A42597FF27295E080080CBBF /* CategoryViewController.swift in Sources */,
+				A42597EA272959C70080CBBF /* HomeViewController.swift in Sources */,
+				A42597F827295B210080CBBF /* TimerManager.swift in Sources */,
 				A42597E6272959C70080CBBF /* AppDelegate.swift in Sources */,
 				A42597E8272959C70080CBBF /* SceneDelegate.swift in Sources */,
 			);
