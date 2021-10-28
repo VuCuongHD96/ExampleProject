@@ -30,6 +30,12 @@
 		A42597F827295B210080CBBF /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597F727295B210080CBBF /* TimerManager.swift */; };
 		A42597FF27295E080080CBBF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597FD27295E080080CBBF /* CategoryViewController.swift */; };
 		A425980027295E080080CBBF /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42597FE27295E080080CBBF /* CategoryViewController.xib */; };
+		A46D19CA272A86CD00B8C17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D19C9272A86CD00B8C17C /* AppDelegate.swift */; };
+		A46D19CC272A86CD00B8C17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D19CB272A86CD00B8C17C /* SceneDelegate.swift */; };
+		A46D19CE272A86CD00B8C17C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46D19CD272A86CD00B8C17C /* ViewController.swift */; };
+		A46D19D1272A86CD00B8C17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46D19CF272A86CD00B8C17C /* Main.storyboard */; };
+		A46D19D3272A86CE00B8C17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46D19D2272A86CE00B8C17C /* Assets.xcassets */; };
+		A46D19D6272A86CE00B8C17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46D19D4272A86CE00B8C17C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,14 @@
 		A42597F727295B210080CBBF /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		A42597FD27295E080080CBBF /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		A42597FE27295E080080CBBF /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
+		A46D19C7272A86CD00B8C17C /* UniversalLinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalLinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46D19C9272A86CD00B8C17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A46D19CB272A86CD00B8C17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A46D19CD272A86CD00B8C17C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A46D19D0272A86CD00B8C17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A46D19D2272A86CE00B8C17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A46D19D5272A86CE00B8C17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A46D19D7272A86CE00B8C17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A46D19C4272A86CD00B8C17C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -104,6 +125,7 @@
 				A42338472727A9D0002A42C1 /* ExampleProject */,
 				A42338622727AAFF002A42C1 /* Location */,
 				A42597E4272959C70080CBBF /* TimeTracker */,
+				A46D19C8272A86CD00B8C17C /* UniversalLinks */,
 				A42338462727A9D0002A42C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,6 +136,7 @@
 				A42338452727A9D0002A42C1 /* ExampleProject.app */,
 				A42338612727AAFF002A42C1 /* Location.app */,
 				A42597E3272959C70080CBBF /* TimeTracker.app */,
+				A46D19C7272A86CD00B8C17C /* UniversalLinks.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,6 +219,20 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		A46D19C8272A86CD00B8C17C /* UniversalLinks */ = {
+			isa = PBXGroup;
+			children = (
+				A46D19C9272A86CD00B8C17C /* AppDelegate.swift */,
+				A46D19CB272A86CD00B8C17C /* SceneDelegate.swift */,
+				A46D19CD272A86CD00B8C17C /* ViewController.swift */,
+				A46D19CF272A86CD00B8C17C /* Main.storyboard */,
+				A46D19D2272A86CE00B8C17C /* Assets.xcassets */,
+				A46D19D4272A86CE00B8C17C /* LaunchScreen.storyboard */,
+				A46D19D7272A86CE00B8C17C /* Info.plist */,
+			);
+			path = UniversalLinks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,13 +287,30 @@
 			productReference = A42597E3272959C70080CBBF /* TimeTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A46D19C6272A86CD00B8C17C /* UniversalLinks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A46D19DA272A86CE00B8C17C /* Build configuration list for PBXNativeTarget "UniversalLinks" */;
+			buildPhases = (
+				A46D19C3272A86CD00B8C17C /* Sources */,
+				A46D19C4272A86CD00B8C17C /* Frameworks */,
+				A46D19C5272A86CD00B8C17C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniversalLinks;
+			productName = UniversalLinks;
+			productReference = A46D19C7272A86CD00B8C17C /* UniversalLinks.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A423383D2727A9D0002A42C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					A42338442727A9D0002A42C1 = {
@@ -267,6 +321,9 @@
 					};
 					A42597E2272959C70080CBBF = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					A46D19C6272A86CD00B8C17C = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -286,6 +343,7 @@
 				A42338442727A9D0002A42C1 /* ExampleProject */,
 				A42338602727AAFF002A42C1 /* Location */,
 				A42597E2272959C70080CBBF /* TimeTracker */,
+				A46D19C6272A86CD00B8C17C /* UniversalLinks */,
 			);
 		};
 /* End PBXProject section */
@@ -319,6 +377,16 @@
 				A42597F2272959C80080CBBF /* LaunchScreen.storyboard in Resources */,
 				A42597EF272959C80080CBBF /* Assets.xcassets in Resources */,
 				A42597ED272959C70080CBBF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46D19C5272A86CD00B8C17C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46D19D6272A86CE00B8C17C /* LaunchScreen.storyboard in Resources */,
+				A46D19D3272A86CE00B8C17C /* Assets.xcassets in Resources */,
+				A46D19D1272A86CD00B8C17C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +424,16 @@
 				A42597F827295B210080CBBF /* TimerManager.swift in Sources */,
 				A42597E6272959C70080CBBF /* AppDelegate.swift in Sources */,
 				A42597E8272959C70080CBBF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A46D19C3272A86CD00B8C17C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46D19CE272A86CD00B8C17C /* ViewController.swift in Sources */,
+				A46D19CA272A86CD00B8C17C /* AppDelegate.swift in Sources */,
+				A46D19CC272A86CD00B8C17C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +484,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				A42597F1272959C80080CBBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A46D19CF272A86CD00B8C17C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A46D19D0272A86CD00B8C17C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A46D19D4272A86CE00B8C17C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A46D19D5272A86CE00B8C17C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -665,6 +759,44 @@
 			};
 			name = Release;
 		};
+		A46D19D8272A86CE00B8C17C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCAT449K7M;
+				INFOPLIST_FILE = UniversalLinks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.UniversalLinks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A46D19D9272A86CE00B8C17C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCAT449K7M;
+				INFOPLIST_FILE = UniversalLinks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.UniversalLinks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -700,6 +832,15 @@
 			buildConfigurations = (
 				A42597F4272959C80080CBBF /* Debug */,
 				A42597F5272959C80080CBBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A46D19DA272A86CE00B8C17C /* Build configuration list for PBXNativeTarget "UniversalLinks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A46D19D8272A86CE00B8C17C /* Debug */,
+				A46D19D9272A86CE00B8C17C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
