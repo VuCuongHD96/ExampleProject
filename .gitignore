@@ -1,1 +1,3 @@
 ExampleProject.xcodeproj/xcuserdata/sun.xcuserdatad/xcschemes/xcschememanagement.plist
+Pods/
+Podfile.lock
