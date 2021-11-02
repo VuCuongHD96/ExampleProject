@@ -1,0 +1,15 @@
+{
+  "aps": {
+    "alert": {
+      "title": "Push notification in simulator!",
+      "body": "🥳 Test go to a View Controller! 🎉",
+      "sound": "default"
+    },
+    "badge": 10
+  },
+  "Simulator Target Bundle": "IOS.RemoteNotification",
+  "navigator": {
+      "screenName": "categoryScreen",
+      "type": "goto"
+  }
+}
