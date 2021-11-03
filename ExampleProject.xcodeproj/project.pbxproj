@@ -45,20 +45,29 @@
 		A47ED918272FA1CC00067FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47ED916272FA1CC00067FE8 /* Main.storyboard */; };
 		A47ED91A272FA1CD00067FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47ED919272FA1CD00067FE8 /* Assets.xcassets */; };
 		A47ED91D272FA1CD00067FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47ED91B272FA1CD00067FE8 /* LaunchScreen.storyboard */; };
+		A4AB287927322489008CBCB3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB287727322489008CBCB3 /* CategoryViewController.swift */; };
+		A4AB287A27322489008CBCB3 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AB287827322489008CBCB3 /* CategoryViewController.xib */; };
+		A4AB288F27322A8A008CBCB3 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB288E27322A8A008CBCB3 /* Screens.swift */; };
+		A4AB28A92732406E008CBCB3 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB28A82732406E008CBCB3 /* StoryBoards.swift */; };
 		A4B63B0327314A04008074EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B0227314A04008074EA /* AppDelegate.swift */; };
-		A4B63B0527314A04008074EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B0427314A04008074EA /* SceneDelegate.swift */; };
-		A4B63B0727314A04008074EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B0627314A04008074EA /* ViewController.swift */; };
+		A4B63B0727314A04008074EA /* RemoteNotifHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B0627314A04008074EA /* RemoteNotifHomeViewController.swift */; };
 		A4B63B0A27314A04008074EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B63B0827314A04008074EA /* Main.storyboard */; };
 		A4B63B0C27314A04008074EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B63B0B27314A04008074EA /* Assets.xcassets */; };
 		A4B63B0F27314A04008074EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B63B0D27314A04008074EA /* LaunchScreen.storyboard */; };
+		A4B63B2727314ADF008074EA /* MyRemoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B2627314ADF008074EA /* MyRemoteNotification.swift */; };
+		A4B63B3027314AE9008074EA /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B2F27314AE9008074EA /* Navigator.swift */; };
 		EB5E1CDEDF56766707D9B6F9 /* Pods_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C718F3D7B9587373E613BAF3 /* Pods_Location.framework */; };
+		EDD4D1E1806F19C42CEC9487 /* Pods_RemoteNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550F00B34A31A1054053E3CA /* Pods_RemoteNotification.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00DD100DF6548D34F6EC4461 /* Pods-RemoteNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteNotification.debug.xcconfig"; path = "Target Support Files/Pods-RemoteNotification/Pods-RemoteNotification.debug.xcconfig"; sourceTree = "<group>"; };
 		09A07D28597FDEA39B2E3A0B /* Pods-UniversalLinks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalLinks.release.xcconfig"; path = "Target Support Files/Pods-UniversalLinks/Pods-UniversalLinks.release.xcconfig"; sourceTree = "<group>"; };
 		29345E4B07BAF30834BC952B /* Pods_ExampleProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A3D9239B4C9D22B05C27FE /* Pods-Location.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Location.release.xcconfig"; path = "Target Support Files/Pods-Location/Pods-Location.release.xcconfig"; sourceTree = "<group>"; };
+		550F00B34A31A1054053E3CA /* Pods_RemoteNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C993A0A2D5AABA74D1A559 /* Pods-Location.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Location.debug.xcconfig"; path = "Target Support Files/Pods-Location/Pods-Location.debug.xcconfig"; sourceTree = "<group>"; };
+		94155C212E48BA5533E6E208 /* Pods-RemoteNotification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteNotification.release.xcconfig"; path = "Target Support Files/Pods-RemoteNotification/Pods-RemoteNotification.release.xcconfig"; sourceTree = "<group>"; };
 		A41582F82727E6EF004DB174 /* GeocoderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocoderManager.swift; sourceTree = "<group>"; };
 		A42338452727A9D0002A42C1 /* ExampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42338482727A9D0002A42C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,14 +113,19 @@
 		A47ED919272FA1CD00067FE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A47ED91C272FA1CD00067FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A47ED91E272FA1CD00067FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4AB287727322489008CBCB3 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		A4AB287827322489008CBCB3 /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
+		A4AB288E27322A8A008CBCB3 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
+		A4AB28A82732406E008CBCB3 /* StoryBoards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
 		A4B63B0027314A04008074EA /* RemoteNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B63B0227314A04008074EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4B63B0427314A04008074EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4B63B0627314A04008074EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4B63B0627314A04008074EA /* RemoteNotifHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotifHomeViewController.swift; sourceTree = "<group>"; };
 		A4B63B0927314A04008074EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4B63B0B27314A04008074EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4B63B0E27314A04008074EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4B63B1027314A04008074EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B63B2627314ADF008074EA /* MyRemoteNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRemoteNotification.swift; sourceTree = "<group>"; };
+		A4B63B2F27314AE9008074EA /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		B5399DFCEB632F063C702EE6 /* Pods-ExampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleProject.debug.xcconfig"; path = "Target Support Files/Pods-ExampleProject/Pods-ExampleProject.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B699AA0ECF01EE2D53B434 /* Pods-TimeTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTracker.release.xcconfig"; path = "Target Support Files/Pods-TimeTracker/Pods-TimeTracker.release.xcconfig"; sourceTree = "<group>"; };
 		C718F3D7B9587373E613BAF3 /* Pods_Location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDD4D1E1806F19C42CEC9487 /* Pods_RemoteNotification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +198,8 @@
 				B5B699AA0ECF01EE2D53B434 /* Pods-TimeTracker.release.xcconfig */,
 				CF140A2C6A448DD615182E6A /* Pods-UniversalLinks.debug.xcconfig */,
 				09A07D28597FDEA39B2E3A0B /* Pods-UniversalLinks.release.xcconfig */,
+				00DD100DF6548D34F6EC4461 /* Pods-RemoteNotification.debug.xcconfig */,
+				94155C212E48BA5533E6E208 /* Pods-RemoteNotification.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -194,6 +211,7 @@
 				C718F3D7B9587373E613BAF3 /* Pods_Location.framework */,
 				DED6DD2B2EC38DFDA571B62C /* Pods_TimeTracker.framework */,
 				D0E1587B1A0934B2812F2D69 /* Pods_UniversalLinks.framework */,
+				550F00B34A31A1054053E3CA /* Pods_RemoteNotification.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -341,18 +359,79 @@
 			path = Plist;
 			sourceTree = "<group>";
 		};
-		A4B63B0127314A04008074EA /* RemoteNotification */ = {
+		A4AB287327322425008CBCB3 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				A4B63B0227314A04008074EA /* AppDelegate.swift */,
-				A4B63B0427314A04008074EA /* SceneDelegate.swift */,
-				A4B63B0627314A04008074EA /* ViewController.swift */,
-				A4B63B0827314A04008074EA /* Main.storyboard */,
-				A4B63B0B27314A04008074EA /* Assets.xcassets */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A4AB287427322433008CBCB3 /* Sences */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB288D27322A68008CBCB3 /* Utils */,
+				A4AB287627322478008CBCB3 /* Category */,
 				A4B63B0D27314A04008074EA /* LaunchScreen.storyboard */,
+				A4AB28752732243F008CBCB3 /* Home */,
+			);
+			path = Sences;
+			sourceTree = "<group>";
+		};
+		A4AB28752732243F008CBCB3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A4B63B0627314A04008074EA /* RemoteNotifHomeViewController.swift */,
+				A4B63B0827314A04008074EA /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A4AB287627322478008CBCB3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB287727322489008CBCB3 /* CategoryViewController.swift */,
+				A4AB287827322489008CBCB3 /* CategoryViewController.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A4AB288D27322A68008CBCB3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB288E27322A8A008CBCB3 /* Screens.swift */,
+				A4AB28A82732406E008CBCB3 /* StoryBoards.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A4B63B0127314A04008074EA /* RemoteNotification */ = {
+			isa = PBXGroup;
+			children = (
+				A4AB287427322433008CBCB3 /* Sences */,
+				A4AB287327322425008CBCB3 /* Application */,
+				A4B63B2E27314AE9008074EA /* Model */,
+				A4B63B2527314ADF008074EA /* MyRemoteNotification */,
+				A4B63B0B27314A04008074EA /* Assets.xcassets */,
 				A4B63B1027314A04008074EA /* Info.plist */,
 			);
 			path = RemoteNotification;
+			sourceTree = "<group>";
+		};
+		A4B63B2527314ADF008074EA /* MyRemoteNotification */ = {
+			isa = PBXGroup;
+			children = (
+				A4B63B2627314ADF008074EA /* MyRemoteNotification.swift */,
+			);
+			path = MyRemoteNotification;
+			sourceTree = "<group>";
+		};
+		A4B63B2E27314AE9008074EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4B63B2F27314AE9008074EA /* Navigator.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -455,9 +534,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4B63B1327314A04008074EA /* Build configuration list for PBXNativeTarget "RemoteNotification" */;
 			buildPhases = (
+				221DCDAC65FC0D80BB084E63 /* [CP] Check Pods Manifest.lock */,
 				A4B63AFC27314A04008074EA /* Sources */,
 				A4B63AFD27314A04008074EA /* Frameworks */,
 				A4B63AFE27314A04008074EA /* Resources */,
+				6FC01E17E62B5780D2F84839 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -576,6 +657,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4AB287A27322489008CBCB3 /* CategoryViewController.xib in Resources */,
 				A4B63B0F27314A04008074EA /* LaunchScreen.storyboard in Resources */,
 				A4B63B0C27314A04008074EA /* Assets.xcassets in Resources */,
 				A4B63B0A27314A04008074EA /* Main.storyboard in Resources */,
@@ -585,6 +667,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		221DCDAC65FC0D80BB084E63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RemoteNotification-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		430F0FBE12F35B891A9EAE6C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -622,6 +726,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExampleProject/Pods-ExampleProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC01E17E62B5780D2F84839 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteNotification/Pods-RemoteNotification-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RemoteNotification/Pods-RemoteNotification-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RemoteNotification/Pods-RemoteNotification-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		70590F2E8FBDE53BAC641A21 /* [CP] Embed Pods Frameworks */ = {
@@ -802,9 +923,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4B63B0727314A04008074EA /* ViewController.swift in Sources */,
+				A4AB28A92732406E008CBCB3 /* StoryBoards.swift in Sources */,
+				A4B63B0727314A04008074EA /* RemoteNotifHomeViewController.swift in Sources */,
+				A4B63B3027314AE9008074EA /* Navigator.swift in Sources */,
 				A4B63B0327314A04008074EA /* AppDelegate.swift in Sources */,
-				A4B63B0527314A04008074EA /* SceneDelegate.swift in Sources */,
+				A4B63B2727314ADF008074EA /* MyRemoteNotification.swift in Sources */,
+				A4AB288F27322A8A008CBCB3 /* Screens.swift in Sources */,
+				A4AB287927322489008CBCB3 /* CategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1252,6 +1377,7 @@
 		};
 		A4B63B1127314A04008074EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DD100DF6548D34F6EC4461 /* Pods-RemoteNotification.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1271,6 +1397,7 @@
 		};
 		A4B63B1227314A04008074EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94155C212E48BA5533E6E208 /* Pods-RemoteNotification.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
