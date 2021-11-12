@@ -12,9 +12,9 @@ final class RemoteNotifHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("----------- Debug ---------- viewdidload = RemoteNotifHomeViewController")
     }
-    
+
     @IBAction func gotoCategoryAction(_ sender: Any) {
         let viewController = CategoryViewController()
         navigationController?.pushViewController(viewController, animated: true)

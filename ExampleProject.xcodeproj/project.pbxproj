@@ -49,6 +49,8 @@
 		A4AB287A27322489008CBCB3 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AB287827322489008CBCB3 /* CategoryViewController.xib */; };
 		A4AB288F27322A8A008CBCB3 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB288E27322A8A008CBCB3 /* Screens.swift */; };
 		A4AB28A92732406E008CBCB3 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB28A82732406E008CBCB3 /* StoryBoards.swift */; };
+		A4AF517E273E0AE30090D1E2 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AF517C273E0AE30090D1E2 /* FavoriteViewController.swift */; };
+		A4AF517F273E0AE30090D1E2 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AF517D273E0AE30090D1E2 /* FavoriteViewController.xib */; };
 		A4B63B0327314A04008074EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B0227314A04008074EA /* AppDelegate.swift */; };
 		A4B63B0727314A04008074EA /* RemoteNotifHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B0627314A04008074EA /* RemoteNotifHomeViewController.swift */; };
 		A4B63B0A27314A04008074EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B63B0827314A04008074EA /* Main.storyboard */; };
@@ -117,6 +119,8 @@
 		A4AB287827322489008CBCB3 /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		A4AB288E27322A8A008CBCB3 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
 		A4AB28A82732406E008CBCB3 /* StoryBoards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
+		A4AF517C273E0AE30090D1E2 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		A4AF517D273E0AE30090D1E2 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		A4B63B0027314A04008074EA /* RemoteNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B63B0227314A04008074EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4B63B0627314A04008074EA /* RemoteNotifHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteNotifHomeViewController.swift; sourceTree = "<group>"; };
@@ -370,7 +374,7 @@
 		A4AB287427322433008CBCB3 /* Sences */ = {
 			isa = PBXGroup;
 			children = (
-				A4AB288D27322A68008CBCB3 /* Utils */,
+				A4AF517B273E0AC80090D1E2 /* Favorite */,
 				A4AB287627322478008CBCB3 /* Category */,
 				A4B63B0D27314A04008074EA /* LaunchScreen.storyboard */,
 				A4AB28752732243F008CBCB3 /* Home */,
@@ -405,9 +409,19 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		A4AF517B273E0AC80090D1E2 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				A4AF517C273E0AE30090D1E2 /* FavoriteViewController.swift */,
+				A4AF517D273E0AE30090D1E2 /* FavoriteViewController.xib */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
 		A4B63B0127314A04008074EA /* RemoteNotification */ = {
 			isa = PBXGroup;
 			children = (
+				A4AB288D27322A68008CBCB3 /* Utils */,
 				A4AB287427322433008CBCB3 /* Sences */,
 				A4AB287327322425008CBCB3 /* Application */,
 				A4B63B2E27314AE9008074EA /* Model */,
@@ -660,6 +674,7 @@
 				A4AB287A27322489008CBCB3 /* CategoryViewController.xib in Resources */,
 				A4B63B0F27314A04008074EA /* LaunchScreen.storyboard in Resources */,
 				A4B63B0C27314A04008074EA /* Assets.xcassets in Resources */,
+				A4AF517F273E0AE30090D1E2 /* FavoriteViewController.xib in Resources */,
 				A4B63B0A27314A04008074EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -929,6 +944,7 @@
 				A4B63B0327314A04008074EA /* AppDelegate.swift in Sources */,
 				A4B63B2727314ADF008074EA /* MyRemoteNotification.swift in Sources */,
 				A4AB288F27322A8A008CBCB3 /* Screens.swift in Sources */,
+				A4AF517E273E0AE30090D1E2 /* FavoriteViewController.swift in Sources */,
 				A4AB287927322489008CBCB3 /* CategoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

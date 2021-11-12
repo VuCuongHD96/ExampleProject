@@ -17,7 +17,7 @@ protocol NavigatorType {
 }
 
 struct Navigator {
-    var screenName = ""
+    var screenNameArray = [String]()
     var type = ""
     var navigatorCase: NavigatorCase {
         if type == "goto" {
@@ -27,9 +27,9 @@ struct Navigator {
         }
     }
     
-    init(jsonData: [String : String]) {
-        self.screenName = jsonData["screenName"] ?? "nothing"
-        self.type = jsonData["type"] ?? "nothing"
+    init(jsonData: [String : Any]) {
+        self.screenNameArray = jsonData["screenName"] as! [String]
+        self.type = jsonData["type"] as! String
     }
 }
 
@@ -42,20 +42,29 @@ extension Navigator: NavigatorType {
     }
     
     func navigationAction() {
-        let viewController = Screens(screenName: screenName).viewController
         switch navigatorCase {
         case .goto:
-            gotoAction(viewController: viewController)
+            let viewControllers = Screens.getScreenArray(with: screenNameArray)
+            gotoAction(viewControllers: viewControllers)
         case .goback:
-            gobackAction()
+            guard let firstItem = screenNameArray.first else { return }
+            let screenType = Screens.getScreenType(with: firstItem)
+            gobackAction(screenType: screenType)
         }
     }
     
-    func gobackAction() {
-        navigationController?.popViewController(animated: true)
+    func gobackAction(screenType: UIViewController.Type) {
+        for controller in navigationController!.viewControllers as Array {
+            if controller.isKind(of: screenType.self) {
+                navigationController?.popToViewController(controller, animated: true)
+                break
+            }
+        }
     }
     
-    func gotoAction(viewController: UIViewController) {
-        navigationController?.pushViewController(viewController, animated: true)
+    func gotoAction(viewControllers: [UIViewController]) {
+        viewControllers.forEach { viewController in
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
 }
