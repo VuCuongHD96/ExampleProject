@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum NavigatorCase {
+enum NavigatorCase: String {
     case goto
     case goback
 }
@@ -16,7 +16,8 @@ protocol NavigatorType {
     func navigationAction()
 }
 
-struct Navigator {
+class Navigator: Codable {
+    
     var screenNameArray = [String]()
     var type = ""
     var navigatorCase: NavigatorCase {
@@ -25,11 +26,6 @@ struct Navigator {
         } else {
             return .goback
         }
-    }
-    
-    init(jsonData: [String : Any]) {
-        self.screenNameArray = jsonData["screenName"] as! [String]
-        self.type = jsonData["type"] as! String
     }
 }
 

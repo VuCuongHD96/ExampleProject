@@ -9,7 +9,7 @@
   },
   "Simulator Target Bundle": "IOS.RemoteNotification",
   "navigator": {
-      "screenName": ["CategoryViewController"],
+      "screenNameArray": ["CategoryViewController"],
       "type": "goback"
   }
 }
