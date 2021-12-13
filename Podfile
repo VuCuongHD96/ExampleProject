@@ -4,6 +4,7 @@
 def shareLib 
   pod 'Toast'
   pod 'Reusable'
+  pod 'Then'
 end
 
 target 'ExampleProject' do
@@ -39,6 +40,14 @@ target 'UniversalLinks' do
 end
 
 target 'RemoteNotification' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for UniversalLinks
+  shareLib
+end
+
+target 'CoreDataExample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 

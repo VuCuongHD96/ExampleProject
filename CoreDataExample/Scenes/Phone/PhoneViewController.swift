@@ -1,27 +1,29 @@
 //
-//  ViewController.swift
+//  PhoneViewController.swift
 //  CoreDataExample
 //
-//  Created by Sun on 10/12/2021.
+//  Created by Sun on 13/12/2021.
 //
 
 import UIKit
-import Then
 
-final class ViewController: UIViewController {
-    
+final class PhoneViewController: UIViewController {
+
     // MARK: - Outlet
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var ageLabel: UILabel!
     
     // MARK: - Property
+    var user: User!
     let manager = DBManager.shared
-    var userArray = [User]() {
+    var phoneArray = [Phone]() {
         didSet {
             tableView.reloadData()
         }
     }
     lazy var alert = UIAlertController(title: "Thông báo",
-                                  message: "Nhập thông tin user",
+                                  message: "Nhập thông tin device",
                                   preferredStyle: .alert)
     
     // MARK: - Life Cycle
@@ -35,9 +37,14 @@ final class ViewController: UIViewController {
     private func setupView() {
         tableView.do {
             $0.dataSource = self
-            $0.delegate = self
         }
         setupAlert()
+        setupRightButtonBar()
+    }
+    
+    private func setupRightButtonBar() {
+        let barbuttonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showPopup))
+        navigationItem.rightBarButtonItem = barbuttonItem
     }
     
     private func setupAlert() {
@@ -49,61 +56,51 @@ final class ViewController: UIViewController {
             textField.placeholder = "Name"
         }
         alert.addTextField { (textField) in
-            textField.placeholder = "Age"
+            textField.placeholder = "Version"
         }
     }
     
     // MARK: - Data
     private func fetchData() {
-        userArray = manager.fetchAllUser()
+        phoneArray = Array(user.phone)
     }
     
-    private func saveUser(name: String, age: String) {
-        let user = User(context: manager.viewContext)
-        user.name = name
-        user.age = age
+    private func savePhone(name: String, version: String) {
+        let phone = Phone(context: manager.viewContext)
+        phone.name = name
+        phone.version = version
+        user.addToPhone(phone)
         manager.save()
         fetchData()
     }
     
     // MARK: - Action
-    @IBAction func addUser(_ sender: Any) {
+    @objc func showPopup() {
         present(alert, animated: true, completion: nil)
     }
     
     private func okAlertAction(alertAction: UIAlertAction) {
         if let name = alert.textFields?[0].text,
             let age = alert.textFields?[1].text {
-            saveUser(name: name, age: age)
+            savePhone(name: name, version: age)
             alert.textFields?[0].text = ""
             alert.textFields?[1].text = ""
         }
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension PhoneViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return userArray.count
+        return phoneArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let row = indexPath.row
-        let data = userArray[row]
+        let data = phoneArray[row]
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
         cell.textLabel?.text = data.name
-        cell.detailTextLabel?.text = data.age
+        cell.detailTextLabel?.text = data.version
         return cell
-    }
-}
-
-extension ViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let row = indexPath.row
-        let data = userArray[row]        
-        let phoneViewController = PhoneViewController()
-        phoneViewController.user = data
-        navigationController?.pushViewController(phoneViewController, animated: true)
     }
 }
