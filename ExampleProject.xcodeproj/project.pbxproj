@@ -47,6 +47,14 @@
 		A47ED918272FA1CC00067FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47ED916272FA1CC00067FE8 /* Main.storyboard */; };
 		A47ED91A272FA1CD00067FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47ED919272FA1CD00067FE8 /* Assets.xcassets */; };
 		A47ED91D272FA1CD00067FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47ED91B272FA1CD00067FE8 /* LaunchScreen.storyboard */; };
+		A48471D7276309FC00B1CB43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48471CC276309FC00B1CB43 /* ViewController.swift */; };
+		A48471D8276309FC00B1CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48471CD276309FC00B1CB43 /* Assets.xcassets */; };
+		A48471D9276309FC00B1CB43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48471CE276309FC00B1CB43 /* LaunchScreen.storyboard */; };
+		A48471DA276309FC00B1CB43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48471D0276309FC00B1CB43 /* Main.storyboard */; };
+		A48471DB276309FC00B1CB43 /* CoreDataExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A48471D2276309FC00B1CB43 /* CoreDataExample.xcdatamodeld */; };
+		A48471DC276309FC00B1CB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48471D4276309FC00B1CB43 /* AppDelegate.swift */; };
+		A48471DE276309FC00B1CB43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48471D6276309FC00B1CB43 /* SceneDelegate.swift */; };
+		A48471F327630B3300B1CB43 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48471F227630B3300B1CB43 /* DBManager.swift */; };
 		A4AB287927322489008CBCB3 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB287727322489008CBCB3 /* CategoryViewController.swift */; };
 		A4AB287A27322489008CBCB3 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4AB287827322489008CBCB3 /* CategoryViewController.xib */; };
 		A4AB288F27322A8A008CBCB3 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4AB288E27322A8A008CBCB3 /* Screens.swift */; };
@@ -60,6 +68,7 @@
 		A4B63B0F27314A04008074EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B63B0D27314A04008074EA /* LaunchScreen.storyboard */; };
 		A4B63B2727314ADF008074EA /* MyRemoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B2627314ADF008074EA /* MyRemoteNotification.swift */; };
 		A4B63B3027314AE9008074EA /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B2F27314AE9008074EA /* Navigator.swift */; };
+		A4BF7BE5276354E00024CA16 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */; };
 		EB5E1CDEDF56766707D9B6F9 /* Pods_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C718F3D7B9587373E613BAF3 /* Pods_Location.framework */; };
 		EDD4D1E1806F19C42CEC9487 /* Pods_RemoteNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550F00B34A31A1054053E3CA /* Pods_RemoteNotification.framework */; };
 /* End PBXBuildFile section */
@@ -119,6 +128,16 @@
 		A47ED919272FA1CD00067FE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A47ED91C272FA1CD00067FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A47ED91E272FA1CD00067FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48471AE276309E700B1CB43 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48471CC276309FC00B1CB43 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A48471CD276309FC00B1CB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A48471CF276309FC00B1CB43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A48471D1276309FC00B1CB43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A48471D3276309FC00B1CB43 /* CoreDataExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataExample.xcdatamodel; sourceTree = "<group>"; };
+		A48471D4276309FC00B1CB43 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A48471D5276309FC00B1CB43 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48471D6276309FC00B1CB43 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A48471F227630B3300B1CB43 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		A4AB287727322489008CBCB3 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		A4AB287827322489008CBCB3 /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
 		A4AB288E27322A8A008CBCB3 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
@@ -134,6 +153,7 @@
 		A4B63B1027314A04008074EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4B63B2627314ADF008074EA /* MyRemoteNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRemoteNotification.swift; sourceTree = "<group>"; };
 		A4B63B2F27314AE9008074EA /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/User+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		B5399DFCEB632F063C702EE6 /* Pods-ExampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleProject.debug.xcconfig"; path = "Target Support Files/Pods-ExampleProject/Pods-ExampleProject.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B699AA0ECF01EE2D53B434 /* Pods-TimeTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTracker.release.xcconfig"; path = "Target Support Files/Pods-TimeTracker/Pods-TimeTracker.release.xcconfig"; sourceTree = "<group>"; };
 		C718F3D7B9587373E613BAF3 /* Pods_Location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +198,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A47ED90B272FA1CC00067FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48471AB276309E700B1CB43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -236,6 +263,7 @@
 		A423383C2727A9D0002A42C1 = {
 			isa = PBXGroup;
 			children = (
+				A48471CB276309FC00B1CB43 /* CoreDataExample */,
 				A42338472727A9D0002A42C1 /* ExampleProject */,
 				A42338622727AAFF002A42C1 /* Location */,
 				A42597E4272959C70080CBBF /* TimeTracker */,
@@ -257,6 +285,7 @@
 				A46D19C7272A86CD00B8C17C /* UniversalLinks.app */,
 				A47ED90E272FA1CC00067FE8 /* Plist.app */,
 				A4B63B0027314A04008074EA /* RemoteNotification.app */,
+				A48471AE276309E700B1CB43 /* CoreDataExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -365,6 +394,63 @@
 				A47ED91E272FA1CD00067FE8 /* Info.plist */,
 			);
 			path = Plist;
+			sourceTree = "<group>";
+		};
+		A48471CB276309FC00B1CB43 /* CoreDataExample */ = {
+			isa = PBXGroup;
+			children = (
+				A48471EA27630A9F00B1CB43 /* DataBase */,
+				A48471E827630A5000B1CB43 /* Scenes */,
+				A48471E727630A3E00B1CB43 /* Resource */,
+				A48471E627630A3100B1CB43 /* Application */,
+				A48471D5276309FC00B1CB43 /* Info.plist */,
+			);
+			path = CoreDataExample;
+			sourceTree = "<group>";
+		};
+		A48471E627630A3100B1CB43 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A48471D4276309FC00B1CB43 /* AppDelegate.swift */,
+				A48471D6276309FC00B1CB43 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A48471E727630A3E00B1CB43 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A48471CD276309FC00B1CB43 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A48471E827630A5000B1CB43 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A48471E927630A8D00B1CB43 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A48471E927630A8D00B1CB43 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A48471CC276309FC00B1CB43 /* ViewController.swift */,
+				A48471CE276309FC00B1CB43 /* LaunchScreen.storyboard */,
+				A48471D0276309FC00B1CB43 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A48471EA27630A9F00B1CB43 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */,
+				A48471D2276309FC00B1CB43 /* CoreDataExample.xcdatamodeld */,
+				A48471F227630B3300B1CB43 /* DBManager.swift */,
+			);
+			path = DataBase;
 			sourceTree = "<group>";
 		};
 		A4AB287327322425008CBCB3 /* Application */ = {
@@ -550,6 +636,23 @@
 			productReference = A47ED90E272FA1CC00067FE8 /* Plist.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A48471AD276309E700B1CB43 /* CoreDataExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A48471C3276309E700B1CB43 /* Build configuration list for PBXNativeTarget "CoreDataExample" */;
+			buildPhases = (
+				A48471AA276309E700B1CB43 /* Sources */,
+				A48471AB276309E700B1CB43 /* Frameworks */,
+				A48471AC276309E700B1CB43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataExample;
+			productName = CoreDataExample;
+			productReference = A48471AE276309E700B1CB43 /* CoreDataExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A4B63AFF27314A04008074EA /* RemoteNotification */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4B63B1327314A04008074EA /* Build configuration list for PBXNativeTarget "RemoteNotification" */;
@@ -593,6 +696,9 @@
 					A47ED90D272FA1CC00067FE8 = {
 						CreatedOnToolsVersion = 12.3;
 					};
+					A48471AD276309E700B1CB43 = {
+						CreatedOnToolsVersion = 12.3;
+					};
 					A4B63AFF27314A04008074EA = {
 						CreatedOnToolsVersion = 12.3;
 					};
@@ -617,6 +723,7 @@
 				A46D19C6272A86CD00B8C17C /* UniversalLinks */,
 				A47ED90D272FA1CC00067FE8 /* Plist */,
 				A4B63AFF27314A04008074EA /* RemoteNotification */,
+				A48471AD276309E700B1CB43 /* CoreDataExample */,
 			);
 		};
 /* End PBXProject section */
@@ -670,6 +777,16 @@
 				A47ED91D272FA1CD00067FE8 /* LaunchScreen.storyboard in Resources */,
 				A47ED91A272FA1CD00067FE8 /* Assets.xcassets in Resources */,
 				A47ED918272FA1CC00067FE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A48471AC276309E700B1CB43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A48471D8276309FC00B1CB43 /* Assets.xcassets in Resources */,
+				A48471DA276309FC00B1CB43 /* Main.storyboard in Resources */,
+				A48471D9276309FC00B1CB43 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -940,6 +1057,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A48471AA276309E700B1CB43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A48471F327630B3300B1CB43 /* DBManager.swift in Sources */,
+				A48471D7276309FC00B1CB43 /* ViewController.swift in Sources */,
+				A4BF7BE5276354E00024CA16 /* User+CoreDataClass.swift in Sources */,
+				A48471DC276309FC00B1CB43 /* AppDelegate.swift in Sources */,
+				A48471DB276309FC00B1CB43 /* CoreDataExample.xcdatamodeld in Sources */,
+				A48471DE276309FC00B1CB43 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A4B63AFC27314A04008074EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1038,6 +1168,22 @@
 				A47ED91C272FA1CD00067FE8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A48471CE276309FC00B1CB43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A48471CF276309FC00B1CB43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A48471D0276309FC00B1CB43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A48471D1276309FC00B1CB43 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		A4B63B0827314A04008074EA /* Main.storyboard */ = {
@@ -1399,6 +1545,46 @@
 			};
 			name = Release;
 		};
+		A48471C1276309E700B1CB43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCAT449K7M;
+				INFOPLIST_FILE = CoreDataExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.CoreDataExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A48471C2276309E700B1CB43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCAT449K7M;
+				INFOPLIST_FILE = CoreDataExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.CoreDataExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		A4B63B1127314A04008074EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00DD100DF6548D34F6EC4461 /* Pods-RemoteNotification.debug.xcconfig */;
@@ -1496,6 +1682,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A48471C3276309E700B1CB43 /* Build configuration list for PBXNativeTarget "CoreDataExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A48471C1276309E700B1CB43 /* Debug */,
+				A48471C2276309E700B1CB43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A4B63B1327314A04008074EA /* Build configuration list for PBXNativeTarget "RemoteNotification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1506,6 +1701,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A48471D2276309FC00B1CB43 /* CoreDataExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A48471D3276309FC00B1CB43 /* CoreDataExample.xcdatamodel */,
+			);
+			currentVersion = A48471D3276309FC00B1CB43 /* CoreDataExample.xcdatamodel */;
+			path = CoreDataExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A423383D2727A9D0002A42C1 /* Project object */;
 }

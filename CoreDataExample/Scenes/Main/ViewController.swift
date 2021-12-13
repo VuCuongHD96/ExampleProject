@@ -1,0 +1,94 @@
+//
+//  ViewController.swift
+//  CoreDataExample
+//
+//  Created by Sun on 10/12/2021.
+//
+
+import UIKit
+
+final class ViewController: UIViewController {
+    
+    // MARK: - Outlet
+    @IBOutlet private weak var tableView: UITableView!
+    
+    // MARK: - Property
+    let manager = DBManager.shared
+    var userArray = [User]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    lazy var alert = UIAlertController(title: "Thông báo",
+                                  message: "Nhập thông tin user",
+                                  preferredStyle: .alert)
+    
+    // MARK: - Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        fetchData()
+        setupView()
+    }
+    
+    // MARK: - View
+    private func setupView() {
+        tableView.dataSource = self
+        setupAlert()
+    }
+    
+    private func setupAlert() {
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: okAlertAction)
+        alert.addAction(okAction)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        alert.addTextField { (textField) in
+            textField.placeholder = "Name"
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Age"
+        }
+    }
+    
+    // MARK: - Data
+    private func fetchData() {
+        userArray = manager.fetch()
+    }
+    
+    private func saveUser(name: String, age: String) {
+        let user = User(context: manager.viewContext)
+        user.name = name
+        user.age = age
+        manager.save()
+        fetchData()
+    }
+    
+    // MARK: - Action
+    @IBAction func addUser(_ sender: Any) {
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func okAlertAction(alertAction: UIAlertAction) {
+        if let name = alert.textFields?[0].text,
+            let age = alert.textFields?[1].text {
+            saveUser(name: name, age: age)
+            alert.textFields?[0].text = ""
+            alert.textFields?[1].text = ""
+        }
+    }
+}
+
+extension ViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return userArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let row = indexPath.row
+        let data = userArray[row]
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
+        cell.textLabel?.text = data.name
+        cell.detailTextLabel?.text = data.age
+        return cell
+    }
+}
