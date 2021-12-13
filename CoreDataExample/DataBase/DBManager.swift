@@ -10,11 +10,13 @@ import CoreData
 
 protocol DBManagerType {
     var viewContext: NSManagedObjectContext { get }
+    func save()
+    func fetch() -> [User] 
 }
 
-final class DBManager {
+final class DBManager: DBManagerType {
     
-    static let shared = DBManager()
+    static let shared: DBManagerType = DBManager()
     
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "CoreDataExample")
