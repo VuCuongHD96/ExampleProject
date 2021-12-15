@@ -14,8 +14,28 @@ public class User: NSManagedObject {
     
     @NSManaged public var name: String
     @NSManaged public var age: String
+    @NSManaged public var phone: Set<Phone>
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<User> {
+    public class func fetchAllUser() -> NSFetchRequest<User> {
         return NSFetchRequest<User>(entityName: "User")
     }
+    
+    public class func fetchRequest(by name: String) -> NSFetchRequest<User> {
+        let arrayUser = fetchAllUser()
+        let predicate = NSPredicate(format: "name == %@ ", name)
+        arrayUser.predicate = predicate
+        return arrayUser
+    }
+    
+    @objc(addPhoneObject:)
+    @NSManaged public func addToPhone(_ value: Phone)
+
+    @objc(removePhoneObject:)
+    @NSManaged public func removeFromPhone(_ value: Phone)
+
+    @objc(addPhone:)
+    @NSManaged public func addToPhone(_ values: Set<Phone>)
+
+    @objc(removePhone:)
+    @NSManaged public func removeFromPhone(_ values: Set<Phone>)
 }
