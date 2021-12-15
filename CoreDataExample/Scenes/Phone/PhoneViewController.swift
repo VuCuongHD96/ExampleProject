@@ -8,7 +8,7 @@
 import UIKit
 
 final class PhoneViewController: UIViewController {
-
+    
     // MARK: - Outlet
     @IBOutlet private weak var tableView: UITableView!
     @IBOutlet private weak var nameLabel: UILabel!
@@ -16,15 +16,15 @@ final class PhoneViewController: UIViewController {
     
     // MARK: - Property
     var user: User!
-    let manager = DBManager.shared
+    let phoneRepository = PhoneRepository(manager: DBManager.shared)
     var phoneArray = [Phone]() {
         didSet {
             tableView.reloadData()
         }
     }
     lazy var alert = UIAlertController(title: "Thông báo",
-                                  message: "Nhập thông tin device",
-                                  preferredStyle: .alert)
+                                       message: "Nhập thông tin device",
+                                       preferredStyle: .alert)
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -66,11 +66,7 @@ final class PhoneViewController: UIViewController {
     }
     
     private func savePhone(name: String, version: String) {
-        let phone = Phone(context: manager.viewContext)
-        phone.name = name
-        phone.version = version
-        user.addToPhone(phone)
-        manager.save()
+        phoneRepository.savePhone(user: user, name: name, version: version)
         fetchData()
     }
     
@@ -81,7 +77,7 @@ final class PhoneViewController: UIViewController {
     
     private func okAlertAction(alertAction: UIAlertAction) {
         if let name = alert.textFields?[0].text,
-            let age = alert.textFields?[1].text {
+           let age = alert.textFields?[1].text {
             savePhone(name: name, version: age)
             alert.textFields?[0].text = ""
             alert.textFields?[1].text = ""

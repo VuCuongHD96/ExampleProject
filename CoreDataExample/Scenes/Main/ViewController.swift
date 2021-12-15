@@ -14,7 +14,6 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     
     // MARK: - Property
-    let manager = DBManager.shared
     var userArray = [User]() {
         didSet {
             tableView.reloadData()
@@ -23,6 +22,7 @@ final class ViewController: UIViewController {
     lazy var alert = UIAlertController(title: "Thông báo",
                                   message: "Nhập thông tin user",
                                   preferredStyle: .alert)
+    let userRepository = UserRepository(manager: DBManager.shared)
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -55,19 +55,16 @@ final class ViewController: UIViewController {
     
     // MARK: - Data
     private func fetchData() {
-        userArray = manager.fetchAllUser()
+        userArray = userRepository.getListUser()
     }
     
     private func saveUser(name: String, age: String) {
-        let user = User(context: manager.viewContext)
-        user.name = name
-        user.age = age
-        manager.save()
+        userRepository.saveUser(name: name, age: age)
         fetchData()
     }
     
     // MARK: - Action
-    @IBAction func addUser(_ sender: Any) {
+    @IBAction func showAlert(_ sender: Any) {
         present(alert, animated: true, completion: nil)
     }
     
@@ -101,7 +98,7 @@ extension ViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let row = indexPath.row
-        let data = userArray[row]        
+        let data = userArray[row]
         let phoneViewController = PhoneViewController()
         phoneViewController.user = data
         navigationController?.pushViewController(phoneViewController, animated: true)

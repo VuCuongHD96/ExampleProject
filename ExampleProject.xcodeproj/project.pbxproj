@@ -50,11 +50,14 @@
 		A46D19D1272A86CD00B8C17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46D19CF272A86CD00B8C17C /* Main.storyboard */; };
 		A46D19D3272A86CE00B8C17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46D19D2272A86CE00B8C17C /* Assets.xcassets */; };
 		A46D19D6272A86CE00B8C17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A46D19D4272A86CE00B8C17C /* LaunchScreen.storyboard */; };
-		A47D2DB7274CE5FD00B8FD3F /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D2DB6274CE5FD00B8FD3F /* URLType.swift */; };
-		A47D2DC0274CF54F00B8FD3F /* WebPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D2DBF274CF54F00B8FD3F /* WebPopupViewController.swift */; };
+		A47168BF2769DAFD00E84B37 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47168BE2769DAFD00E84B37 /* UserRepository.swift */; };
+		A47168CA276A25E900E84B37 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47168C9276A25E900E84B37 /* BaseRepository.swift */; };
+		A47168D5276A272B00E84B37 /* PhoneRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47168D4276A272B00E84B37 /* PhoneRepository.swift */; };
 		A4737FAC2766EC3300C04515 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4737FAA2766EC3300C04515 /* PhoneViewController.swift */; };
 		A4737FAD2766EC3300C04515 /* PhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4737FAB2766EC3300C04515 /* PhoneViewController.xib */; };
 		A4737FAF2767021600C04515 /* Phone+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4737FAE2767021600C04515 /* Phone+CoreDataClass.swift */; };
+		A47D2DB7274CE5FD00B8FD3F /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D2DB6274CE5FD00B8FD3F /* URLType.swift */; };
+		A47D2DC0274CF54F00B8FD3F /* WebPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D2DBF274CF54F00B8FD3F /* WebPopupViewController.swift */; };
 		A47ED911272FA1CC00067FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47ED910272FA1CC00067FE8 /* AppDelegate.swift */; };
 		A47ED913272FA1CC00067FE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47ED912272FA1CC00067FE8 /* SceneDelegate.swift */; };
 		A47ED915272FA1CC00067FE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47ED914272FA1CC00067FE8 /* ViewController.swift */; };
@@ -155,11 +158,14 @@
 		A46D19D2272A86CE00B8C17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46D19D5272A86CE00B8C17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A46D19D7272A86CE00B8C17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A47D2DB6274CE5FD00B8FD3F /* URLType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
-		A47D2DBF274CF54F00B8FD3F /* WebPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPopupViewController.swift; sourceTree = "<group>"; };
+		A47168BE2769DAFD00E84B37 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		A47168C9276A25E900E84B37 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		A47168D4276A272B00E84B37 /* PhoneRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRepository.swift; sourceTree = "<group>"; };
 		A4737FAA2766EC3300C04515 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		A4737FAB2766EC3300C04515 /* PhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneViewController.xib; sourceTree = "<group>"; };
 		A4737FAE2767021600C04515 /* Phone+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Phone+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/Phone+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A47D2DB6274CE5FD00B8FD3F /* URLType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
+		A47D2DBF274CF54F00B8FD3F /* WebPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPopupViewController.swift; sourceTree = "<group>"; };
 		A47ED90E272FA1CC00067FE8 /* Plist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47ED910272FA1CC00067FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A47ED912272FA1CC00067FE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -471,15 +477,23 @@
 			path = UniversalLinks;
 			sourceTree = "<group>";
 		};
-		A47D2DED274CFA6900B8FD3F /* WebPopUp */ = {
+		A47168AF2769D92A00E84B37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A400B50E274665E9003F85AA /* HTMLDesign.swift */,
-				A47D2DB6274CE5FD00B8FD3F /* URLType.swift */,
-				A47D2DBF274CF54F00B8FD3F /* WebPopupViewController.swift */,
-				A46CBF0C275B664E00D7D252 /* WebAction.swift */,
+				A4737FAE2767021600C04515 /* Phone+CoreDataClass.swift */,
+				A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */,
 			);
-			path = WebPopUp;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A47168BC2769DAE200E84B37 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A47168BE2769DAFD00E84B37 /* UserRepository.swift */,
+				A47168C9276A25E900E84B37 /* BaseRepository.swift */,
+				A47168D4276A272B00E84B37 /* PhoneRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		A4737FA92766EC1700C04515 /* Phone */ = {
@@ -489,6 +503,17 @@
 				A4737FAB2766EC3300C04515 /* PhoneViewController.xib */,
 			);
 			path = Phone;
+			sourceTree = "<group>";
+		};
+		A47D2DED274CFA6900B8FD3F /* WebPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				A400B50E274665E9003F85AA /* HTMLDesign.swift */,
+				A47D2DB6274CE5FD00B8FD3F /* URLType.swift */,
+				A47D2DBF274CF54F00B8FD3F /* WebPopupViewController.swift */,
+				A46CBF0C275B664E00D7D252 /* WebAction.swift */,
+			);
+			path = WebPopUp;
 			sourceTree = "<group>";
 		};
 		A47ED90F272FA1CC00067FE8 /* Plist */ = {
@@ -556,8 +581,8 @@
 		A48471EA27630A9F00B1CB43 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				A4737FAE2767021600C04515 /* Phone+CoreDataClass.swift */,
-				A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */,
+				A47168BC2769DAE200E84B37 /* Repository */,
+				A47168AF2769D92A00E84B37 /* Model */,
 				A48471D2276309FC00B1CB43 /* CoreDataExample.xcdatamodeld */,
 				A48471F227630B3300B1CB43 /* DBManager.swift */,
 			);
@@ -1351,11 +1376,14 @@
 			files = (
 				A48471F327630B3300B1CB43 /* DBManager.swift in Sources */,
 				A48471D7276309FC00B1CB43 /* ViewController.swift in Sources */,
+				A47168BF2769DAFD00E84B37 /* UserRepository.swift in Sources */,
 				A4737FAF2767021600C04515 /* Phone+CoreDataClass.swift in Sources */,
 				A4BF7BE5276354E00024CA16 /* User+CoreDataClass.swift in Sources */,
 				A48471DC276309FC00B1CB43 /* AppDelegate.swift in Sources */,
+				A47168D5276A272B00E84B37 /* PhoneRepository.swift in Sources */,
 				A48471DB276309FC00B1CB43 /* CoreDataExample.xcdatamodeld in Sources */,
 				A48471DE276309FC00B1CB43 /* SceneDelegate.swift in Sources */,
+				A47168CA276A25E900E84B37 /* BaseRepository.swift in Sources */,
 				A4737FAC2766EC3300C04515 /* PhoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
