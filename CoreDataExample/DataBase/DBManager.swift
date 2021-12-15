@@ -11,8 +11,8 @@ import CoreData
 protocol DBManagerType {
     var viewContext: NSManagedObjectContext { get }
     func save()
-    func fetchAllUser() -> [User]
-    func fetchRequest(by name: String) -> [User] 
+    func fetchRequest(by name: String) -> [User]
+    func fetchListItem<T: NSManagedObject>(item: T.Type) -> [T]
 }
 
 final class DBManager: DBManagerType {
@@ -39,8 +39,8 @@ final class DBManager: DBManagerType {
         }
     }
     
-    func fetchAllUser() -> [User] {
-        let fetchRequest = User.fetchAllUser()
+    func fetchRequest(by name: String) -> [User] {
+        let fetchRequest = User.fetchRequest(by: name)
         if let dataArray = try? viewContext.fetch(fetchRequest) {
             return dataArray
         } else {
@@ -48,12 +48,13 @@ final class DBManager: DBManagerType {
         }
     }
     
-    func fetchRequest(by name: String) -> [User] {
-        let fetchRequest = User.fetchRequest(by: name)
-        if let dataArray = try? viewContext.fetch(fetchRequest) {
+    func fetchListItem<T: NSManagedObject>(item: T.Type) -> [T] {
+        let entityName = String(describing: T.self)
+        let request = NSFetchRequest<T>(entityName: entityName)
+        if let dataArray = try? viewContext.fetch(request) {
             return dataArray
         } else {
-            return [User]()
+            return [T]()
         }
     }
 }
