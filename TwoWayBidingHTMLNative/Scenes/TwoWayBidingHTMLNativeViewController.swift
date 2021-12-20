@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-final class TwoWayBidingHTMLNativeViewController: UIViewController {
+final class TwoWayBidingHTMLNativeViewController: BaseViewController {
     
     // MARK: - Outlet
     @IBOutlet private weak var webviewFarther: UIView!
