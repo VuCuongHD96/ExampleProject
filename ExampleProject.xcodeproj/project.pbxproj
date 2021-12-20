@@ -94,6 +94,7 @@
 		A4B63B2727314ADF008074EA /* MyRemoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B2627314ADF008074EA /* MyRemoteNotification.swift */; };
 		A4B63B3027314AE9008074EA /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B2F27314AE9008074EA /* Navigator.swift */; };
 		A4BF7BE5276354E00024CA16 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */; };
+		A4D6995C277034BC00F0AEC9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A4D6995B277034BC00F0AEC9 /* README.md */; };
 		A4F2BBB2275DF7EB00BE04DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F2BBB1275DF7EB00BE04DB /* AppDelegate.swift */; };
 		A4F2BBB4275DF7EB00BE04DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F2BBB3275DF7EB00BE04DB /* SceneDelegate.swift */; };
 		A4F2BBB6275DF7EB00BE04DB /* TwoWayBidingHTMLNativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F2BBB5275DF7EB00BE04DB /* TwoWayBidingHTMLNativeViewController.swift */; };
@@ -208,6 +209,7 @@
 		A4B63B2627314ADF008074EA /* MyRemoteNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRemoteNotification.swift; sourceTree = "<group>"; };
 		A4B63B2F27314AE9008074EA /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/User+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A4D6995B277034BC00F0AEC9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A4F2BBAF275DF7EB00BE04DB /* TwoWayBidingHTMLNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoWayBidingHTMLNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F2BBB1275DF7EB00BE04DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4F2BBB3275DF7EB00BE04DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -362,6 +364,7 @@
 		A423383C2727A9D0002A42C1 = {
 			isa = PBXGroup;
 			children = (
+				A4D6995B277034BC00F0AEC9 /* README.md */,
 				A48471CB276309FC00B1CB43 /* CoreDataExample */,
 				A42338472727A9D0002A42C1 /* ExampleProject */,
 				A42338622727AAFF002A42C1 /* Location */,
@@ -990,6 +993,7 @@
 			files = (
 				A42338552727A9D1002A42C1 /* LaunchScreen.storyboard in Resources */,
 				A42338522727A9D1002A42C1 /* Assets.xcassets in Resources */,
+				A4D6995C277034BC00F0AEC9 /* README.md in Resources */,
 				A42338502727A9D0002A42C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -43,7 +43,7 @@ target 'RemoteNotification' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for UniversalLinks
+  # Pods for RemoteNotification
   shareLib
 end
 
@@ -51,6 +51,6 @@ target 'CoreDataExample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for UniversalLinks
+  # Pods for CoreDataExample
   shareLib
 end
