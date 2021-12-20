@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PhoneViewController: UIViewController {
+final class PhoneViewController: BaseViewController {
     
     // MARK: - Outlet
     @IBOutlet private weak var tableView: UITableView!
