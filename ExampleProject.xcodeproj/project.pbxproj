@@ -63,6 +63,13 @@
 		A47ED918272FA1CC00067FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47ED916272FA1CC00067FE8 /* Main.storyboard */; };
 		A47ED91A272FA1CD00067FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47ED919272FA1CD00067FE8 /* Assets.xcassets */; };
 		A47ED91D272FA1CD00067FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47ED91B272FA1CD00067FE8 /* LaunchScreen.storyboard */; };
+		A481DC0C27740D7600526093 /* Journey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A481DC0A27740D7600526093 /* Journey.xcdatamodeld */; };
+		A481DC1C2774107B00526093 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC192774107B00526093 /* Event+CoreDataClass.swift */; };
+		A481DC1D2774107B00526093 /* PushInApp+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC182774107B00526093 /* PushInApp+CoreDataClass.swift */; };
+		A481DC4F2774170B00526093 /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC4E2774170B00526093 /* EventRepository.swift */; };
+		A481DC6427741F8000526093 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC6327741F8000526093 /* UserResponse.swift */; };
+		A481DC792774227D00526093 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC782774227D00526093 /* UserRequest.swift */; };
+		A481DC84277423CA00526093 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC83277423CA00526093 /* BaseRequest.swift */; };
 		A48471D7276309FC00B1CB43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48471CC276309FC00B1CB43 /* ViewController.swift */; };
 		A48471D8276309FC00B1CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A48471CD276309FC00B1CB43 /* Assets.xcassets */; };
 		A48471D9276309FC00B1CB43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A48471CE276309FC00B1CB43 /* LaunchScreen.storyboard */; };
@@ -183,6 +190,13 @@
 		A47ED919272FA1CD00067FE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A47ED91C272FA1CD00067FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A47ED91E272FA1CD00067FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A481DC0B27740D7600526093 /* Journey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Journey.xcdatamodel; sourceTree = "<group>"; };
+		A481DC182774107B00526093 /* PushInApp+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PushInApp+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/Repository/PushInApp+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A481DC192774107B00526093 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/Repository/Event+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A481DC4E2774170B00526093 /* EventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepository.swift; sourceTree = "<group>"; };
+		A481DC6327741F8000526093 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
+		A481DC782774227D00526093 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		A481DC83277423CA00526093 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		A48471AE276309E700B1CB43 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48471CC276309FC00B1CB43 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A48471CD276309FC00B1CB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -491,6 +505,8 @@
 		A47168AF2769D92A00E84B37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A481DC192774107B00526093 /* Event+CoreDataClass.swift */,
+				A481DC182774107B00526093 /* PushInApp+CoreDataClass.swift */,
 				A4737FAE2767021600C04515 /* Phone+CoreDataClass.swift */,
 				A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */,
 			);
@@ -500,9 +516,10 @@
 		A47168BC2769DAE200E84B37 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				A47168BE2769DAFD00E84B37 /* UserRepository.swift */,
-				A47168C9276A25E900E84B37 /* BaseRepository.swift */,
 				A47168D4276A272B00E84B37 /* PhoneRepository.swift */,
+				A47168C9276A25E900E84B37 /* BaseRepository.swift */,
+				A47168BE2769DAFD00E84B37 /* UserRepository.swift */,
+				A481DC4E2774170B00526093 /* EventRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -541,9 +558,27 @@
 			path = Plist;
 			sourceTree = "<group>";
 		};
+		A481DC6227741EAA00526093 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A481DC6327741F8000526093 /* UserResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		A481DC772774213700526093 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				A481DC782774227D00526093 /* UserRequest.swift */,
+				A481DC83277423CA00526093 /* BaseRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		A48471CB276309FC00B1CB43 /* CoreDataExample */ = {
 			isa = PBXGroup;
 			children = (
+				A47168AF2769D92A00E84B37 /* Model */,
 				A48471EA27630A9F00B1CB43 /* DataBase */,
 				A48471E827630A5000B1CB43 /* Scenes */,
 				A48471E727630A3E00B1CB43 /* Resource */,
@@ -592,9 +627,11 @@
 		A48471EA27630A9F00B1CB43 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
+				A481DC772774213700526093 /* Request */,
+				A481DC6227741EAA00526093 /* Response */,
 				A47168BC2769DAE200E84B37 /* Repository */,
-				A47168AF2769D92A00E84B37 /* Model */,
 				A48471D2276309FC00B1CB43 /* CoreDataExample.xcdatamodeld */,
+				A481DC0A27740D7600526093 /* Journey.xcdatamodeld */,
 				A48471F227630B3300B1CB43 /* DBManager.swift */,
 			);
 			path = DataBase;
@@ -1392,13 +1429,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48471F327630B3300B1CB43 /* DBManager.swift in Sources */,
+				A481DC0C27740D7600526093 /* Journey.xcdatamodeld in Sources */,
+				A481DC792774227D00526093 /* UserRequest.swift in Sources */,
+				A481DC84277423CA00526093 /* BaseRequest.swift in Sources */,
+				A481DC4F2774170B00526093 /* EventRepository.swift in Sources */,
+				A481DC1D2774107B00526093 /* PushInApp+CoreDataClass.swift in Sources */,
 				A48471D7276309FC00B1CB43 /* ViewController.swift in Sources */,
 				A47168BF2769DAFD00E84B37 /* UserRepository.swift in Sources */,
 				A4737FAF2767021600C04515 /* Phone+CoreDataClass.swift in Sources */,
+				A481DC6427741F8000526093 /* UserResponse.swift in Sources */,
 				A4BF7BE5276354E00024CA16 /* User+CoreDataClass.swift in Sources */,
 				A488E9EC2770281A008F1FBC /* BaseViewController.swift in Sources */,
 				A48471DC276309FC00B1CB43 /* AppDelegate.swift in Sources */,
 				A47168D5276A272B00E84B37 /* PhoneRepository.swift in Sources */,
+				A481DC1C2774107B00526093 /* Event+CoreDataClass.swift in Sources */,
 				A48471DB276309FC00B1CB43 /* CoreDataExample.xcdatamodeld in Sources */,
 				A48471DE276309FC00B1CB43 /* SceneDelegate.swift in Sources */,
 				A47168CA276A25E900E84B37 /* BaseRepository.swift in Sources */,
@@ -2202,6 +2246,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		A481DC0A27740D7600526093 /* Journey.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A481DC0B27740D7600526093 /* Journey.xcdatamodel */,
+			);
+			currentVersion = A481DC0B27740D7600526093 /* Journey.xcdatamodel */;
+			path = Journey.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		A48471D2276309FC00B1CB43 /* CoreDataExample.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

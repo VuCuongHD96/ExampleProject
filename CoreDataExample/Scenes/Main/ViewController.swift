@@ -55,7 +55,7 @@ final class ViewController: BaseViewController {
     
     // MARK: - Data
     private func fetchData() {
-        userArray = userRepository.getListUser()
+        userArray = userRepository.getList()
     }
     
     private func saveUser(name: String, age: String) {

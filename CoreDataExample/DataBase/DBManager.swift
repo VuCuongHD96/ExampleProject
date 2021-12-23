@@ -13,6 +13,7 @@ protocol DBManagerType {
     func save()
     func fetchRequest(by name: String) -> [User]
     func fetchListItem<T: NSManagedObject>(item: T.Type) -> [T]
+    func request(input: BaseRequest) -> [BaseRequest.T]
 }
 
 final class DBManager: DBManagerType {
@@ -28,7 +29,7 @@ final class DBManager: DBManagerType {
         })
         return container
     }()
-        
+    
     lazy var viewContext = persistentContainer.viewContext
     
     func save() {
@@ -55,6 +56,15 @@ final class DBManager: DBManagerType {
             return dataArray
         } else {
             return [T]()
+        }
+    }
+    
+    func request(input: BaseRequest) -> [BaseRequest.T] {
+        let request = input.request
+        if let dataArray = try? viewContext.fetch(request) {
+            return dataArray
+        } else {
+            return [BaseRequest.T]()
         }
     }
 }

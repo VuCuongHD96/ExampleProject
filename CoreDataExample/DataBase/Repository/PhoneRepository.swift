@@ -9,9 +9,13 @@ import Foundation
 
 final class PhoneRepository: BaseRepository {
     
+    func getList() -> [Phone] {
+        return manager.fetchListItem(item: T.self)
+    }
+    
     typealias T = Phone
     
-    private var manager: DBManagerType!
+    internal var manager: DBManagerType!
     
     init(manager: DBManagerType) {
         self.manager = manager
