@@ -40,6 +40,7 @@
 		A42597F827295B210080CBBF /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597F727295B210080CBBF /* TimerManager.swift */; };
 		A42597FF27295E080080CBBF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42597FD27295E080080CBBF /* CategoryViewController.swift */; };
 		A425980027295E080080CBBF /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A42597FE27295E080080CBBF /* CategoryViewController.xib */; };
+		A45A8B0B2775B0CD00C144C5 /* PhoneRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A8B0A2775B0CD00C144C5 /* PhoneRequest.swift */; };
 		A45D7E6C2764FBEB00AE069B /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D7E6B2764FBEB00AE069B /* Parser.swift */; };
 		A45D7E6E276501EA00AE069B /* BaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45D7E6D276501EA00AE069B /* BaseResult.swift */; };
 		A46CBF0D275B664E00D7D252 /* WebAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46CBF0C275B664E00D7D252 /* WebAction.swift */; };
@@ -67,7 +68,6 @@
 		A481DC1C2774107B00526093 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC192774107B00526093 /* Event+CoreDataClass.swift */; };
 		A481DC1D2774107B00526093 /* PushInApp+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC182774107B00526093 /* PushInApp+CoreDataClass.swift */; };
 		A481DC4F2774170B00526093 /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC4E2774170B00526093 /* EventRepository.swift */; };
-		A481DC6427741F8000526093 /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC6327741F8000526093 /* UserResponse.swift */; };
 		A481DC792774227D00526093 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC782774227D00526093 /* UserRequest.swift */; };
 		A481DC84277423CA00526093 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC83277423CA00526093 /* BaseRequest.swift */; };
 		A48471D7276309FC00B1CB43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48471CC276309FC00B1CB43 /* ViewController.swift */; };
@@ -163,6 +163,7 @@
 		A42597F727295B210080CBBF /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		A42597FD27295E080080CBBF /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		A42597FE27295E080080CBBF /* CategoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
+		A45A8B0A2775B0CD00C144C5 /* PhoneRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneRequest.swift; sourceTree = "<group>"; };
 		A45D7E6B2764FBEB00AE069B /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		A45D7E6D276501EA00AE069B /* BaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResult.swift; sourceTree = "<group>"; };
 		A46CBF0C275B664E00D7D252 /* WebAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAction.swift; sourceTree = "<group>"; };
@@ -194,7 +195,6 @@
 		A481DC182774107B00526093 /* PushInApp+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PushInApp+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/Repository/PushInApp+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		A481DC192774107B00526093 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/Repository/Event+CoreDataClass.swift"; sourceTree = "<absolute>"; };
 		A481DC4E2774170B00526093 /* EventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepository.swift; sourceTree = "<group>"; };
-		A481DC6327741F8000526093 /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		A481DC782774227D00526093 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		A481DC83277423CA00526093 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		A48471AE276309E700B1CB43 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -558,18 +558,11 @@
 			path = Plist;
 			sourceTree = "<group>";
 		};
-		A481DC6227741EAA00526093 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				A481DC6327741F8000526093 /* UserResponse.swift */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
 		A481DC772774213700526093 /* Request */ = {
 			isa = PBXGroup;
 			children = (
 				A481DC782774227D00526093 /* UserRequest.swift */,
+				A45A8B0A2775B0CD00C144C5 /* PhoneRequest.swift */,
 				A481DC83277423CA00526093 /* BaseRequest.swift */,
 			);
 			path = Request;
@@ -628,7 +621,6 @@
 			isa = PBXGroup;
 			children = (
 				A481DC772774213700526093 /* Request */,
-				A481DC6227741EAA00526093 /* Response */,
 				A47168BC2769DAE200E84B37 /* Repository */,
 				A48471D2276309FC00B1CB43 /* CoreDataExample.xcdatamodeld */,
 				A481DC0A27740D7600526093 /* Journey.xcdatamodeld */,
@@ -1437,9 +1429,9 @@
 				A48471D7276309FC00B1CB43 /* ViewController.swift in Sources */,
 				A47168BF2769DAFD00E84B37 /* UserRepository.swift in Sources */,
 				A4737FAF2767021600C04515 /* Phone+CoreDataClass.swift in Sources */,
-				A481DC6427741F8000526093 /* UserResponse.swift in Sources */,
 				A4BF7BE5276354E00024CA16 /* User+CoreDataClass.swift in Sources */,
 				A488E9EC2770281A008F1FBC /* BaseViewController.swift in Sources */,
+				A45A8B0B2775B0CD00C144C5 /* PhoneRequest.swift in Sources */,
 				A48471DC276309FC00B1CB43 /* AppDelegate.swift in Sources */,
 				A47168D5276A272B00E84B37 /* PhoneRepository.swift in Sources */,
 				A481DC1C2774107B00526093 /* Event+CoreDataClass.swift in Sources */,

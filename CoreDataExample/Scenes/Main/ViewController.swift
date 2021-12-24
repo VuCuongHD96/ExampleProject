@@ -59,7 +59,8 @@ final class ViewController: BaseViewController {
     }
     
     private func saveUser(name: String, age: String) {
-        userRepository.saveUser(name: name, age: age)
+        let user = User(name: name, age: age)
+        userRepository.save(user)
         fetchData()
     }
     
