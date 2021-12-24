@@ -36,16 +36,8 @@ extension UserRepository: UserRepositoryType {
         manager.save()
     }
     
-    func getUser(name: String) -> [T] {
-        let userRequest = UserRequest(format: "name = '\(name)'")
+    func getUser(format: String) -> [T] {
+        let userRequest = UserRequest(format: format)
         return getArrayData(input: userRequest)
     }
-    
-    
-    //    public class func fetchRequest(by name: String) -> NSFetchRequest<User> {
-    //        let arrayUser = fetchAllUser()
-    //        let predicate = NSPredicate(format: "name == %@ ", name)
-    //        arrayUser.predicate = predicate
-    //        return arrayUser
-    //    }
 }

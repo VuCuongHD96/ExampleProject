@@ -31,9 +31,14 @@ extension BaseRequest {
     func makeRequest(className: T.Type, format: String?) {
         let entityName = String(describing: className)
         request = NSFetchRequest<T>(entityName: entityName)
+        request.predicate = makePredicate(format: format)
+    }
+    
+    private func makePredicate(format: String?) -> NSPredicate? {
         if let format = format {
-            let predicate = NSPredicate(format: format)
-            request.predicate = predicate
+            return NSPredicate(format: format)
+        } else {
+            return nil
         }
     }
 }

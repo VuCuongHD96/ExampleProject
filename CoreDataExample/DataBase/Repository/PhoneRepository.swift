@@ -31,11 +31,7 @@ extension PhoneRepository: BaseRepository {
     
     func getList() -> [T] {
         let phoneRequest = PhoneRequest()
-        if let dataArray = manager.request(input: phoneRequest) as? [T] {
-            return dataArray
-        } else {
-            return [T]()
-        }
+        return getArrayData(input: phoneRequest)
     }
 }
 
