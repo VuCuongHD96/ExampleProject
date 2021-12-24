@@ -7,18 +7,14 @@
 
 import Foundation
  
-final class UserRepository: BaseRepository {
-    
+final class UserRepository {
+  
     typealias T = User
     
-    private var manager: DBManagerType!
+    internal var manager: DBManagerType!
     
     init(manager: DBManagerType) {
         self.manager = manager
-    }
-    
-    func getListUser() -> [T] {
-        return manager.fetchListItem(item: T.self)
     }
     
     func saveUser(name: String, age: String) {
@@ -26,5 +22,17 @@ final class UserRepository: BaseRepository {
         user.name = name
         user.age = age
         manager.save()
+    }
+}
+
+extension UserRepository: BaseRepository {
+
+    func getList() -> [T] {
+        let userRequest = UserRequest()
+        if let dataArray = manager.request(input: userRequest) as? [T] {
+            return dataArray
+        } else {
+            return [T]()
+        }
     }
 }

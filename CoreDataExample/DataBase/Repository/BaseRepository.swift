@@ -10,4 +10,14 @@ import Foundation
 protocol BaseRepository {
     
     associatedtype T
+    var manager: DBManagerType! { get }
+    init(manager: DBManagerType)
+    func getList() -> [T] 
+}
+
+extension BaseRepository {
+    
+    var entityName: String {
+        return String(describing: T.self)
+    }
 }
