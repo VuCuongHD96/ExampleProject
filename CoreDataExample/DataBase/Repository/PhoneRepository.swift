@@ -7,11 +7,11 @@
 
 import Foundation
 
-final class PhoneRepository: BaseRepository {
-    
-    func getList() -> [Phone] {
-        return manager.fetchListItem(item: T.self)
-    }
+protocol PhoneRepositoryType {
+    func getList(by user: User) -> [Phone]
+}
+
+final class PhoneRepository {
     
     typealias T = Phone
     
@@ -21,15 +21,23 @@ final class PhoneRepository: BaseRepository {
         self.manager = manager
     }
     
-    func getListPhone() -> [T] {
-        return manager.fetchListItem(item: T.self)
-    }
-    
-    func savePhone(user: User, name: String, version: String) {
-        let phone = Phone(context: manager.viewContext)
-        phone.name = name
-        phone.version = version
+    func savePhone(user: User, phone: Phone) {
         user.addToPhone(phone)
         manager.save()
+    }
+}
+
+extension PhoneRepository: BaseRepository {
+    
+    func getList() -> [T] {
+        let phoneRequest = PhoneRequest()
+        return getArrayData(input: phoneRequest)
+    }
+}
+
+extension PhoneRepository: PhoneRepositoryType {
+    
+    func getList(by user: User) -> [Phone] {
+        return Array(user.phone)
     }
 }

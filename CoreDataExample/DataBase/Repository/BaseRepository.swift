@@ -20,4 +20,12 @@ extension BaseRepository {
     var entityName: String {
         return String(describing: T.self)
     }
+    
+    func getArrayData(input: BaseRequest) -> [T] {
+        if let dataArray = manager.request(input: input) as? [T] {
+            return dataArray
+        } else {
+            return [T]()
+        }
+    }
 }

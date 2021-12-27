@@ -11,12 +11,10 @@ import CoreData
 protocol DBManagerType {
     var viewContext: NSManagedObjectContext { get }
     func save()
-    func fetchRequest(by name: String) -> [User]
-    func fetchListItem<T: NSManagedObject>(item: T.Type) -> [T]
     func request(input: BaseRequest) -> [BaseRequest.T]
 }
 
-final class DBManager: DBManagerType {
+final class DBManager {
     
     static let shared: DBManagerType = DBManager()
     
@@ -39,25 +37,9 @@ final class DBManager: DBManagerType {
             print("Could not save. \(error), \(error.userInfo)")
         }
     }
-    
-    func fetchRequest(by name: String) -> [User] {
-        let fetchRequest = User.fetchRequest(by: name)
-        if let dataArray = try? viewContext.fetch(fetchRequest) {
-            return dataArray
-        } else {
-            return [User]()
-        }
-    }
-    
-    func fetchListItem<T: NSManagedObject>(item: T.Type) -> [T] {
-        let entityName = String(describing: T.self)
-        let request = NSFetchRequest<T>(entityName: entityName)
-        if let dataArray = try? viewContext.fetch(request) {
-            return dataArray
-        } else {
-            return [T]()
-        }
-    }
+}
+
+extension DBManager: DBManagerType {
     
     func request(input: BaseRequest) -> [BaseRequest.T] {
         let request = input.request

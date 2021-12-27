@@ -6,9 +6,13 @@
 //
 
 import Foundation
- 
+
+protocol UserRepositoryType {
+    func save(_ user: User)
+}
+
 final class UserRepository {
-  
+    
     typealias T = User
     
     internal var manager: DBManagerType!
@@ -16,23 +20,24 @@ final class UserRepository {
     init(manager: DBManagerType) {
         self.manager = manager
     }
-    
-    func saveUser(name: String, age: String) {
-        let user = User(context: manager.viewContext)
-        user.name = name
-        user.age = age
-        manager.save()
-    }
 }
 
 extension UserRepository: BaseRepository {
-
+    
     func getList() -> [T] {
         let userRequest = UserRequest()
-        if let dataArray = manager.request(input: userRequest) as? [T] {
-            return dataArray
-        } else {
-            return [T]()
-        }
+        return getArrayData(input: userRequest)
+    }
+}
+
+extension UserRepository: UserRepositoryType {
+    
+    func save(_ user: User) {
+        manager.save()
+    }
+    
+    func getUser(format: String) -> [T] {
+        let userRequest = UserRequest(format: format)
+        return getArrayData(input: userRequest)
     }
 }

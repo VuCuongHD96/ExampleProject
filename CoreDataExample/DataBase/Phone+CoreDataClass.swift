@@ -15,7 +15,9 @@ public class Phone: NSManagedObject {
     @NSManaged public var name: String?
     @NSManaged public var version: String?
     
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Phone> {
-        return NSFetchRequest<Phone>(entityName: "Phone")
+    convenience init(name: String, version: String) {
+        self.init(context: DBManager.shared.viewContext)
+        self.name = name
+        self.version = version
     }
 }
