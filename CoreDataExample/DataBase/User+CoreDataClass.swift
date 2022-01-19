@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 @objc(User)
-public class User: NSManagedObject {
+public class User: NSManagedObject, Decodable {
     
     @NSManaged public var name: String
     @NSManaged public var age: String
@@ -20,7 +20,21 @@ public class User: NSManagedObject {
         self.init(context: DBManager.shared.viewContext)
         self.name = name
         self.age = age
-    }    
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case age
+        case phones
+    }
+    
+    public required convenience init(from decoder: Decoder) throws {
+        self.init(context: DBManager.shared.viewContext)
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        name = try values.decode(String.self, forKey: .name)
+        age = try values.decode(String.self, forKey: .age)
+        phone = try values.decode(Set<Phone>.self, forKey: .phones)
+    }
 }
 
 extension User {

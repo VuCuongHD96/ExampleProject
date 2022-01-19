@@ -8,6 +8,25 @@
 import UIKit
 import Then
 
+let json = """
+{
+  "user": {
+    "name": "Cuong test Json",
+    "age": "20 test part 1",
+    "phones": [
+      {
+        "name": "ip13 test part 1",
+        "version": "15 test part 1"
+      },
+      {
+        "name": "ip12 test part 1",
+        "version": "11 test part 1"
+      }
+    ]
+  }
+} 
+"""
+
 final class ViewController: BaseViewController {
     
     // MARK: - Outlet
@@ -23,10 +42,23 @@ final class ViewController: BaseViewController {
                                   message: "Nhập thông tin user",
                                   preferredStyle: .alert)
     let userRepository = UserRepository(manager: DBManager.shared)
+    let phoneRepository = PhoneRepository(manager: DBManager.shared)
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let data = Data(json.utf8)
+        
+        let decoder = JSONDecoder()
+        let userResponse = try? decoder.decode(UserResponse.self, from: data)
+        print("---------- debug ------- phone array decode = ", userResponse?.user.phone)
+        
+//        let listPhone = phoneRepository.getList()
+//        print("---------- debug ------- phone array core data = ", listPhone)
+        
+        
+        
         fetchData()
         setupView()
     }

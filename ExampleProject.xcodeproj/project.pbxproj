@@ -65,9 +65,6 @@
 		A47ED91A272FA1CD00067FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A47ED919272FA1CD00067FE8 /* Assets.xcassets */; };
 		A47ED91D272FA1CD00067FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A47ED91B272FA1CD00067FE8 /* LaunchScreen.storyboard */; };
 		A481DC0C27740D7600526093 /* Journey.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A481DC0A27740D7600526093 /* Journey.xcdatamodeld */; };
-		A481DC1C2774107B00526093 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC192774107B00526093 /* Event+CoreDataClass.swift */; };
-		A481DC1D2774107B00526093 /* PushInApp+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC182774107B00526093 /* PushInApp+CoreDataClass.swift */; };
-		A481DC4F2774170B00526093 /* EventRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC4E2774170B00526093 /* EventRepository.swift */; };
 		A481DC792774227D00526093 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC782774227D00526093 /* UserRequest.swift */; };
 		A481DC84277423CA00526093 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A481DC83277423CA00526093 /* BaseRequest.swift */; };
 		A48471D7276309FC00B1CB43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48471CC276309FC00B1CB43 /* ViewController.swift */; };
@@ -101,6 +98,8 @@
 		A4B63B2727314ADF008074EA /* MyRemoteNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B2627314ADF008074EA /* MyRemoteNotification.swift */; };
 		A4B63B3027314AE9008074EA /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B63B2F27314AE9008074EA /* Navigator.swift */; };
 		A4BF7BE5276354E00024CA16 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */; };
+		A4CEC19327980BAC009AF71B /* PhoneResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CEC19227980BAC009AF71B /* PhoneResponse.swift */; };
+		A4CEC1BA27981E75009AF71B /* UserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CEC1B927981E75009AF71B /* UserResponse.swift */; };
 		A4D6995C277034BC00F0AEC9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A4D6995B277034BC00F0AEC9 /* README.md */; };
 		A4F2BBB2275DF7EB00BE04DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F2BBB1275DF7EB00BE04DB /* AppDelegate.swift */; };
 		A4F2BBB4275DF7EB00BE04DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F2BBB3275DF7EB00BE04DB /* SceneDelegate.swift */; };
@@ -192,9 +191,6 @@
 		A47ED91C272FA1CD00067FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A47ED91E272FA1CD00067FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A481DC0B27740D7600526093 /* Journey.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Journey.xcdatamodel; sourceTree = "<group>"; };
-		A481DC182774107B00526093 /* PushInApp+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "PushInApp+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/Repository/PushInApp+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		A481DC192774107B00526093 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Event+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/Repository/Event+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		A481DC4E2774170B00526093 /* EventRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepository.swift; sourceTree = "<group>"; };
 		A481DC782774227D00526093 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		A481DC83277423CA00526093 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		A48471AE276309E700B1CB43 /* CoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +219,8 @@
 		A4B63B2627314ADF008074EA /* MyRemoteNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRemoteNotification.swift; sourceTree = "<group>"; };
 		A4B63B2F27314AE9008074EA /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "User+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/User+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A4CEC19227980BAC009AF71B /* PhoneResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneResponse.swift; sourceTree = "<group>"; };
+		A4CEC1B927981E75009AF71B /* UserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResponse.swift; sourceTree = "<group>"; };
 		A4D6995B277034BC00F0AEC9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A4F2BBAF275DF7EB00BE04DB /* TwoWayBidingHTMLNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoWayBidingHTMLNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F2BBB1275DF7EB00BE04DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -505,10 +503,8 @@
 		A47168AF2769D92A00E84B37 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A481DC192774107B00526093 /* Event+CoreDataClass.swift */,
-				A481DC182774107B00526093 /* PushInApp+CoreDataClass.swift */,
-				A4737FAE2767021600C04515 /* Phone+CoreDataClass.swift */,
 				A4BF7BE3276354E00024CA16 /* User+CoreDataClass.swift */,
+				A4737FAE2767021600C04515 /* Phone+CoreDataClass.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -519,7 +515,6 @@
 				A47168D4276A272B00E84B37 /* PhoneRepository.swift */,
 				A47168C9276A25E900E84B37 /* BaseRepository.swift */,
 				A47168BE2769DAFD00E84B37 /* UserRepository.swift */,
-				A481DC4E2774170B00526093 /* EventRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -620,6 +615,7 @@
 		A48471EA27630A9F00B1CB43 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
+				A4CEC1AF27981E15009AF71B /* Response */,
 				A481DC772774213700526093 /* Request */,
 				A47168BC2769DAE200E84B37 /* Repository */,
 				A48471D2276309FC00B1CB43 /* CoreDataExample.xcdatamodeld */,
@@ -714,6 +710,15 @@
 				A45D7E6D276501EA00AE069B /* BaseResult.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A4CEC1AF27981E15009AF71B /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A4CEC19227980BAC009AF71B /* PhoneResponse.swift */,
+				A4CEC1B927981E75009AF71B /* UserResponse.swift */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 		A4F2BBB0275DF7EB00BE04DB /* TwoWayBidingHTMLNative */ = {
@@ -1424,8 +1429,6 @@
 				A481DC0C27740D7600526093 /* Journey.xcdatamodeld in Sources */,
 				A481DC792774227D00526093 /* UserRequest.swift in Sources */,
 				A481DC84277423CA00526093 /* BaseRequest.swift in Sources */,
-				A481DC4F2774170B00526093 /* EventRepository.swift in Sources */,
-				A481DC1D2774107B00526093 /* PushInApp+CoreDataClass.swift in Sources */,
 				A48471D7276309FC00B1CB43 /* ViewController.swift in Sources */,
 				A47168BF2769DAFD00E84B37 /* UserRepository.swift in Sources */,
 				A4737FAF2767021600C04515 /* Phone+CoreDataClass.swift in Sources */,
@@ -1434,11 +1437,12 @@
 				A45A8B0B2775B0CD00C144C5 /* PhoneRequest.swift in Sources */,
 				A48471DC276309FC00B1CB43 /* AppDelegate.swift in Sources */,
 				A47168D5276A272B00E84B37 /* PhoneRepository.swift in Sources */,
-				A481DC1C2774107B00526093 /* Event+CoreDataClass.swift in Sources */,
 				A48471DB276309FC00B1CB43 /* CoreDataExample.xcdatamodeld in Sources */,
 				A48471DE276309FC00B1CB43 /* SceneDelegate.swift in Sources */,
 				A47168CA276A25E900E84B37 /* BaseRepository.swift in Sources */,
 				A4737FAC2766EC3300C04515 /* PhoneViewController.swift in Sources */,
+				A4CEC19327980BAC009AF71B /* PhoneResponse.swift in Sources */,
+				A4CEC1BA27981E75009AF71B /* UserResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
