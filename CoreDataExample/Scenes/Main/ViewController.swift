@@ -23,10 +23,12 @@ final class ViewController: BaseViewController {
                                   message: "Nhập thông tin user",
                                   preferredStyle: .alert)
     let userRepository = UserRepository(manager: DBManager.shared)
+    let phoneRepository = PhoneRepository(manager: DBManager.shared)
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupCoreData()
         fetchData()
         setupView()
     }
@@ -54,6 +56,14 @@ final class ViewController: BaseViewController {
     }
     
     // MARK: - Data
+    private func setupCoreData() {
+        let data = Data(coreDataJson.utf8)
+        let decoder = JSONDecoder()
+        if let userResponse = try? decoder.decode(UserResponse.self, from: data) {
+            userRepository.save(userResponse.user)
+        }
+    }
+    
     private func fetchData() {
         userArray = userRepository.getList()
     }

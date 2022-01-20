@@ -20,4 +20,19 @@ public class Phone: NSManagedObject {
         self.name = name
         self.version = version
     }
+    
+    public required convenience init(from decoder: Decoder) throws {
+        self.init(context: DBManager.shared.viewContext)
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        name = try values.decode(String.self, forKey: .name)
+        version = try values.decode(String.self, forKey: .version)
+    }
+}
+
+extension Phone: Decodable {
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case version
+    }
 }
