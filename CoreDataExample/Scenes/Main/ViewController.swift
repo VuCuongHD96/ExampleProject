@@ -66,6 +66,10 @@ final class ViewController: BaseViewController {
     
     private func fetchData() {
         userArray = userRepository.getList()
+        print("---------- debug ------------ userArray = ", userArray)
+        userArray.forEach { user in
+            print("---------- debug ------------ user.eventData = ", user.eventdata)
+        }
     }
     
     private func saveUser(name: String, age: String) {

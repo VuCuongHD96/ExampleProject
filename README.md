@@ -9,6 +9,7 @@
 ## Location: Tìm địa chỉ
 
 ## CoreDataExample: lưu danh sách cha con
+ - Lưu property dạng dictionary
 
 ## TimeTracker: Đếm giờ trên mỗi màn hình
 
