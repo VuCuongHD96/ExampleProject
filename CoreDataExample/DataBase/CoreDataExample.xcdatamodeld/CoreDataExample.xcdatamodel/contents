@@ -7,11 +7,13 @@
     </entity>
     <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="age" optional="YES" attributeType="String"/>
+        <attribute name="dict" optional="YES" attributeType="String"/>
+        <attribute name="eventdata" optional="YES" attributeType="Transformable"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <relationship name="phone" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Phone" inverseName="user" inverseEntity="Phone"/>
     </entity>
     <elements>
         <element name="Phone" positionX="-217.4296875" positionY="-441.94921875" width="162.1640625" height="74"/>
-        <element name="User" positionX="-194.31640625" positionY="-184.95703125" width="128" height="74"/>
+        <element name="User" positionX="-194.31640625" positionY="-184.95703125" width="128" height="104"/>
     </elements>
 </model>

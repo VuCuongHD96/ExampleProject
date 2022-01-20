@@ -12,6 +12,11 @@ let coreDataJson = """
   "user": {
     "name": "Cuong test Json",
     "age": "20 test part 1",
+    "dict": "Dictionary part 1",
+    "eventdata": {
+        "time_visit": "5",
+        "screen_name": "Home"
+    },
     "phones": [
       {
         "name": "ip13 test part 1",

@@ -15,6 +15,8 @@ public class User: NSManagedObject, Decodable {
     @NSManaged public var name: String
     @NSManaged public var age: String
     @NSManaged public var phone: Set<Phone>
+    @NSManaged public var dict: String
+    @NSManaged public var eventdata: [String : String]
     
     convenience init(name: String, age: String) {
         self.init(context: DBManager.shared.viewContext)
@@ -26,6 +28,8 @@ public class User: NSManagedObject, Decodable {
         case name
         case age
         case phones
+        case dict
+        case eventdata
     }
     
     public required convenience init(from decoder: Decoder) throws {
@@ -34,6 +38,8 @@ public class User: NSManagedObject, Decodable {
         name = try values.decode(String.self, forKey: .name)
         age = try values.decode(String.self, forKey: .age)
         phone = try values.decode(Set<Phone>.self, forKey: .phones)
+        dict = try values.decode(String.self, forKey: .dict)
+        eventdata = try values.decode([String : String].self, forKey: .eventdata)
     }
 }
 
