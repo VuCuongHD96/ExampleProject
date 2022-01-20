@@ -63,7 +63,6 @@ final class PhoneViewController: BaseViewController {
     // MARK: - Data
     private func fetchData() {
         phoneArray = phoneRepository.getList(by: user)
-//        phoneArray = phoneRepository.getList()
     }
     
     private func savePhone(name: String, version: String) {

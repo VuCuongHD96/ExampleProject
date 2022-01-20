@@ -8,25 +8,6 @@
 import UIKit
 import Then
 
-let json = """
-{
-  "user": {
-    "name": "Cuong test Json",
-    "age": "20 test part 1",
-    "phones": [
-      {
-        "name": "ip13 test part 1",
-        "version": "15 test part 1"
-      },
-      {
-        "name": "ip12 test part 1",
-        "version": "11 test part 1"
-      }
-    ]
-  }
-} 
-"""
-
 final class ViewController: BaseViewController {
     
     // MARK: - Outlet
@@ -47,18 +28,7 @@ final class ViewController: BaseViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let data = Data(json.utf8)
-        
-        let decoder = JSONDecoder()
-        let userResponse = try? decoder.decode(UserResponse.self, from: data)
-        print("---------- debug ------- phone array decode = ", userResponse?.user.phone)
-        
-//        let listPhone = phoneRepository.getList()
-//        print("---------- debug ------- phone array core data = ", listPhone)
-        
-        
-        
+        setupCoreData()
         fetchData()
         setupView()
     }
@@ -86,6 +56,14 @@ final class ViewController: BaseViewController {
     }
     
     // MARK: - Data
+    private func setupCoreData() {
+        let data = Data(coreDataJson.utf8)
+        let decoder = JSONDecoder()
+        if let userResponse = try? decoder.decode(UserResponse.self, from: data) {
+            userRepository.save(userResponse.user)
+        }
+    }
+    
     private func fetchData() {
         userArray = userRepository.getList()
     }

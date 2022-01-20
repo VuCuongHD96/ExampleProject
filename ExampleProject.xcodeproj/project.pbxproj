@@ -56,6 +56,7 @@
 		A4737FAC2766EC3300C04515 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4737FAA2766EC3300C04515 /* PhoneViewController.swift */; };
 		A4737FAD2766EC3300C04515 /* PhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4737FAB2766EC3300C04515 /* PhoneViewController.xib */; };
 		A4737FAF2767021600C04515 /* Phone+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4737FAE2767021600C04515 /* Phone+CoreDataClass.swift */; };
+		A479847A2798FA3700DF7D2D /* JsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47984792798FA3700DF7D2D /* JsonData.swift */; };
 		A47D2DB7274CE5FD00B8FD3F /* URLType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D2DB6274CE5FD00B8FD3F /* URLType.swift */; };
 		A47D2DC0274CF54F00B8FD3F /* WebPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D2DBF274CF54F00B8FD3F /* WebPopupViewController.swift */; };
 		A47ED911272FA1CC00067FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47ED910272FA1CC00067FE8 /* AppDelegate.swift */; };
@@ -180,6 +181,7 @@
 		A4737FAA2766EC3300C04515 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		A4737FAB2766EC3300C04515 /* PhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneViewController.xib; sourceTree = "<group>"; };
 		A4737FAE2767021600C04515 /* Phone+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Phone+CoreDataClass.swift"; path = "/Users/sun/Desktop/ExampleProject/CoreDataExample/DataBase/Phone+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		A47984792798FA3700DF7D2D /* JsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonData.swift; sourceTree = "<group>"; };
 		A47D2DB6274CE5FD00B8FD3F /* URLType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLType.swift; sourceTree = "<group>"; };
 		A47D2DBF274CF54F00B8FD3F /* WebPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPopupViewController.swift; sourceTree = "<group>"; };
 		A47ED90E272FA1CC00067FE8 /* Plist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -589,6 +591,7 @@
 			isa = PBXGroup;
 			children = (
 				A48471CD276309FC00B1CB43 /* Assets.xcassets */,
+				A47984792798FA3700DF7D2D /* JsonData.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -1433,6 +1436,7 @@
 				A47168BF2769DAFD00E84B37 /* UserRepository.swift in Sources */,
 				A4737FAF2767021600C04515 /* Phone+CoreDataClass.swift in Sources */,
 				A4BF7BE5276354E00024CA16 /* User+CoreDataClass.swift in Sources */,
+				A479847A2798FA3700DF7D2D /* JsonData.swift in Sources */,
 				A488E9EC2770281A008F1FBC /* BaseViewController.swift in Sources */,
 				A45A8B0B2775B0CD00C144C5 /* PhoneRequest.swift in Sources */,
 				A48471DC276309FC00B1CB43 /* AppDelegate.swift in Sources */,
