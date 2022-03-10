@@ -1,25 +1,17 @@
 //
-//  ViewController.swift
+//  KeyChain.swift
 //  KeyChainExample
 //
-//  Created by Cuong on 3/9/22.
+//  Created by Cuong on 3/10/22.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController {
-
-    @IBOutlet private weak var deleteButton: UIButton!
+struct KeyChain {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        save("pass", for: "accABC")
-        
-    }
-
-    func save(_ password: String, for account: String) {
+    static let standard = KeyChain()
+    
+    func save(password: String, for account: String) {
             let password = password.data(using: String.Encoding.utf8)!
             let query: [String: Any] = [kSecClass as String: kSecClassGenericPassword,
                                         kSecAttrAccount as String: account,
@@ -40,21 +32,11 @@ class ViewController: UIViewController {
         return String(data: data, encoding: String.Encoding.utf8)
     }
     
-    func removeKeyChain() {
+    func remove() {
         let secItemClasses = [kSecClassGenericPassword, kSecClassInternetPassword, kSecClassCertificate, kSecClassKey, kSecClassIdentity]
         for itemClass in secItemClasses {
             let spec: NSDictionary = [kSecClass: itemClass]
             SecItemDelete(spec)
         }
-    }
-    
-    @IBAction func deleteAction() {
-        print("start delete")
-        removeKeyChain()
-    }
-    
-    @IBAction func getDataAction() {
-        let result = retrivePassword(for: "accABC")
-        print("------ result = ", result)
     }
 }
