@@ -9,9 +9,18 @@
 /* Begin PBXBuildFile section */
 		21B1DF35C98E35923571D3E1 /* Pods_ExampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29345E4B07BAF30834BC952B /* Pods_ExampleProject.framework */; };
 		32473EDB3784AEA41F0B40C4 /* Pods_TimeTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DED6DD2B2EC38DFDA571B62C /* Pods_TimeTracker.framework */; };
+		5E32563B27DA22D2000C530B /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32563A27DA22D2000C530B /* KeyChain.swift */; };
+		5E32565027DA49FB000C530B /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32563A27DA22D2000C530B /* KeyChain.swift */; };
+		5E32578527DA4D13000C530B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32578427DA4D13000C530B /* AppDelegate.swift */; };
+		5E32578927DA4D13000C530B /* DeepLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32578827DA4D13000C530B /* DeepLinkViewController.swift */; };
+		5E32578C27DA4D13000C530B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E32578A27DA4D13000C530B /* Main.storyboard */; };
+		5E32578E27DA4D14000C530B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E32578D27DA4D14000C530B /* Assets.xcassets */; };
+		5E32579127DA4D14000C530B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E32578F27DA4D14000C530B /* LaunchScreen.storyboard */; };
+		5E3257DA27DA4EF8000C530B /* KeyChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE00AC27D85BFE009FF9F0 /* KeyChainViewController.swift */; };
+		5E3257E727DA50D9000C530B /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3257E627DA50D9000C530B /* KeyChain.swift */; };
 		5EBE00A927D85BFE009FF9F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE00A827D85BFE009FF9F0 /* AppDelegate.swift */; };
 		5EBE00AB27D85BFE009FF9F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE00AA27D85BFE009FF9F0 /* SceneDelegate.swift */; };
-		5EBE00AD27D85BFE009FF9F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE00AC27D85BFE009FF9F0 /* ViewController.swift */; };
+		5EBE00AD27D85BFE009FF9F0 /* KeyChainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBE00AC27D85BFE009FF9F0 /* KeyChainViewController.swift */; };
 		5EBE00B027D85BFE009FF9F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBE00AE27D85BFE009FF9F0 /* Main.storyboard */; };
 		5EBE00B227D85C00009FF9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EBE00B127D85C00009FF9F0 /* Assets.xcassets */; };
 		5EBE00B527D85C00009FF9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBE00B327D85C00009FF9F0 /* LaunchScreen.storyboard */; };
@@ -120,6 +129,19 @@
 		EDD4D1E1806F19C42CEC9487 /* Pods_RemoteNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550F00B34A31A1054053E3CA /* Pods_RemoteNotification.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5E3256B327DA4BAC000C530B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00DD100DF6548D34F6EC4461 /* Pods-RemoteNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteNotification.debug.xcconfig"; path = "Target Support Files/Pods-RemoteNotification/Pods-RemoteNotification.debug.xcconfig"; sourceTree = "<group>"; };
 		09A07D28597FDEA39B2E3A0B /* Pods-UniversalLinks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalLinks.release.xcconfig"; path = "Target Support Files/Pods-UniversalLinks/Pods-UniversalLinks.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,10 +149,23 @@
 		46A3D9239B4C9D22B05C27FE /* Pods-Location.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Location.release.xcconfig"; path = "Target Support Files/Pods-Location/Pods-Location.release.xcconfig"; sourceTree = "<group>"; };
 		4B91E7F869479A0C66725B32 /* Pods-CoreDataExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataExample.release.xcconfig"; path = "Target Support Files/Pods-CoreDataExample/Pods-CoreDataExample.release.xcconfig"; sourceTree = "<group>"; };
 		550F00B34A31A1054053E3CA /* Pods_RemoteNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E32562E27DA195E000C530B /* KeyChainExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyChainExample.entitlements; sourceTree = "<group>"; };
+		5E32562F27DA1975000C530B /* Location.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Location.entitlements; sourceTree = "<group>"; };
+		5E32563A27DA22D2000C530B /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		5E3256A427DA4BAB000C530B /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		5E32578227DA4D13000C530B /* DeepLinkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLinkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E32578427DA4D13000C530B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5E32578827DA4D13000C530B /* DeepLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkViewController.swift; sourceTree = "<group>"; };
+		5E32578B27DA4D13000C530B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E32578D27DA4D14000C530B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E32579027DA4D14000C530B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E32579227DA4D14000C530B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E3257E627DA50D9000C530B /* KeyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyChain.swift; path = KeyChainExample/KeyChain.swift; sourceTree = SOURCE_ROOT; };
+		5E3257F327DA5118000C530B /* DeepLinkExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeepLinkExample.entitlements; sourceTree = "<group>"; };
 		5EBE00A627D85BFE009FF9F0 /* KeyChainExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyChainExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBE00A827D85BFE009FF9F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EBE00AA27D85BFE009FF9F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5EBE00AC27D85BFE009FF9F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5EBE00AC27D85BFE009FF9F0 /* KeyChainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainViewController.swift; sourceTree = "<group>"; };
 		5EBE00AF27D85BFE009FF9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EBE00B127D85C00009FF9F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EBE00B427D85C00009FF9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -259,6 +294,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5E32577F27DA4D13000C530B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EBE00A327D85BFE009FF9F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -366,16 +408,34 @@
 				D0E1587B1A0934B2812F2D69 /* Pods_UniversalLinks.framework */,
 				550F00B34A31A1054053E3CA /* Pods_RemoteNotification.framework */,
 				66F1EF2A8AAF9C371A1D01F9 /* Pods_CoreDataExample.framework */,
+				5E3256A427DA4BAB000C530B /* AuthenticationServices.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E32578327DA4D13000C530B /* DeepLinkExample */ = {
+			isa = PBXGroup;
+			children = (
+				5E3257F327DA5118000C530B /* DeepLinkExample.entitlements */,
+				5E32578427DA4D13000C530B /* AppDelegate.swift */,
+				5E3257E627DA50D9000C530B /* KeyChain.swift */,
+				5E32578827DA4D13000C530B /* DeepLinkViewController.swift */,
+				5E32578A27DA4D13000C530B /* Main.storyboard */,
+				5E32578D27DA4D14000C530B /* Assets.xcassets */,
+				5E32578F27DA4D14000C530B /* LaunchScreen.storyboard */,
+				5E32579227DA4D14000C530B /* Info.plist */,
+			);
+			path = DeepLinkExample;
 			sourceTree = "<group>";
 		};
 		5EBE00A727D85BFE009FF9F0 /* KeyChainExample */ = {
 			isa = PBXGroup;
 			children = (
+				5E32562E27DA195E000C530B /* KeyChainExample.entitlements */,
 				5EBE00A827D85BFE009FF9F0 /* AppDelegate.swift */,
 				5EBE00AA27D85BFE009FF9F0 /* SceneDelegate.swift */,
-				5EBE00AC27D85BFE009FF9F0 /* ViewController.swift */,
+				5EBE00AC27D85BFE009FF9F0 /* KeyChainViewController.swift */,
+				5E32563A27DA22D2000C530B /* KeyChain.swift */,
 				5EBE00AE27D85BFE009FF9F0 /* Main.storyboard */,
 				5EBE00B127D85C00009FF9F0 /* Assets.xcassets */,
 				5EBE00B327D85C00009FF9F0 /* LaunchScreen.storyboard */,
@@ -422,6 +482,7 @@
 				A4F2BBB0275DF7EB00BE04DB /* TwoWayBidingHTMLNative */,
 				A41566242742099600F4B362 /* WebviewHTML */,
 				5EBE00A727D85BFE009FF9F0 /* KeyChainExample */,
+				5E32578327DA4D13000C530B /* DeepLinkExample */,
 				A42338462727A9D0002A42C1 /* Products */,
 				28F41F775B7785380B39ED81 /* Pods */,
 				2C6D5B04955172BFD659F617 /* Frameworks */,
@@ -441,6 +502,7 @@
 				A4F2BBAF275DF7EB00BE04DB /* TwoWayBidingHTMLNative.app */,
 				A41566232742099600F4B362 /* WebviewHTML.app */,
 				5EBE00A627D85BFE009FF9F0 /* KeyChainExample.app */,
+				5E32578227DA4D13000C530B /* DeepLinkExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -462,6 +524,7 @@
 		A42338622727AAFF002A42C1 /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				5E32562F27DA1975000C530B /* Location.entitlements */,
 				A42338632727AAFF002A42C1 /* AppDelegate.swift */,
 				A42338652727AAFF002A42C1 /* SceneDelegate.swift */,
 				A42338672727AAFF002A42C1 /* ViewController.swift */,
@@ -818,6 +881,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5E32578127DA4D13000C530B /* DeepLinkExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E32579327DA4D14000C530B /* Build configuration list for PBXNativeTarget "DeepLinkExample" */;
+			buildPhases = (
+				5E32577E27DA4D13000C530B /* Sources */,
+				5E32577F27DA4D13000C530B /* Frameworks */,
+				5E32578027DA4D13000C530B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeepLinkExample;
+			productName = DeepLinkExample;
+			productReference = 5E32578227DA4D13000C530B /* DeepLinkExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5EBE00A527D85BFE009FF9F0 /* KeyChainExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EBE00B927D85C00009FF9F0 /* Build configuration list for PBXNativeTarget "KeyChainExample" */;
@@ -861,6 +941,7 @@
 				A42338422727A9D0002A42C1 /* Frameworks */,
 				A42338432727A9D0002A42C1 /* Resources */,
 				48143A76FFE8D0CF301D70B4 /* [CP] Embed Pods Frameworks */,
+				5E3256B327DA4BAC000C530B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -1009,6 +1090,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					5E32578127DA4D13000C530B = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					5EBE00A527D85BFE009FF9F0 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -1064,11 +1148,22 @@
 				A4F2BBAE275DF7EB00BE04DB /* TwoWayBidingHTMLNative */,
 				A41566222742099600F4B362 /* WebviewHTML */,
 				5EBE00A527D85BFE009FF9F0 /* KeyChainExample */,
+				5E32578127DA4D13000C530B /* DeepLinkExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5E32578027DA4D13000C530B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E32579127DA4D14000C530B /* LaunchScreen.storyboard in Resources */,
+				5E32578E27DA4D14000C530B /* Assets.xcassets in Resources */,
+				5E32578C27DA4D13000C530B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EBE00A427D85BFE009FF9F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1416,11 +1511,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5E32577E27DA4D13000C530B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E32578927DA4D13000C530B /* DeepLinkViewController.swift in Sources */,
+				5E32578527DA4D13000C530B /* AppDelegate.swift in Sources */,
+				5E3257E727DA50D9000C530B /* KeyChain.swift in Sources */,
+				5E3257DA27DA4EF8000C530B /* KeyChainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EBE00A227D85BFE009FF9F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EBE00AD27D85BFE009FF9F0 /* ViewController.swift in Sources */,
+				5EBE00AD27D85BFE009FF9F0 /* KeyChainViewController.swift in Sources */,
+				5E32563B27DA22D2000C530B /* KeyChain.swift in Sources */,
 				5EBE00A927D85BFE009FF9F0 /* AppDelegate.swift in Sources */,
 				5EBE00AB27D85BFE009FF9F0 /* SceneDelegate.swift in Sources */,
 			);
@@ -1459,6 +1566,7 @@
 				A42338682727AAFF002A42C1 /* ViewController.swift in Sources */,
 				A41582F92727E6EF004DB174 /* GeocoderManager.swift in Sources */,
 				A42338642727AAFF002A42C1 /* AppDelegate.swift in Sources */,
+				5E32565027DA49FB000C530B /* KeyChain.swift in Sources */,
 				A42338662727AAFF002A42C1 /* SceneDelegate.swift in Sources */,
 				A488E9F327702D22008F1FBC /* BaseViewController.swift in Sources */,
 			);
@@ -1557,6 +1665,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5E32578A27DA4D13000C530B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E32578B27DA4D13000C530B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E32578F27DA4D14000C530B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E32579027DA4D14000C530B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		5EBE00AE27D85BFE009FF9F0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1720,11 +1844,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5E32579427DA4D14000C530B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeepLinkExample/DeepLinkExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCAT449K7M;
+				INFOPLIST_FILE = DeepLinkExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.DeepLinkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E32579527DA4D14000C530B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DeepLinkExample/DeepLinkExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GCAT449K7M;
+				INFOPLIST_FILE = DeepLinkExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = IOS.DeepLinkExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5EBE00B727D85C00009FF9F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KeyChainExample/KeyChainExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCAT449K7M;
 				INFOPLIST_FILE = KeyChainExample/Info.plist;
@@ -1745,6 +1912,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = KeyChainExample/KeyChainExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCAT449K7M;
 				INFOPLIST_FILE = KeyChainExample/Info.plist;
@@ -1962,6 +2130,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Location/Location.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCAT449K7M;
 				INFOPLIST_FILE = Location/Info.plist;
@@ -1982,6 +2151,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Location/Location.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GCAT449K7M;
 				INFOPLIST_FILE = Location/Info.plist;
@@ -2283,6 +2453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5E32579327DA4D14000C530B /* Build configuration list for PBXNativeTarget "DeepLinkExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E32579427DA4D14000C530B /* Debug */,
+				5E32579527DA4D14000C530B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5EBE00B927D85C00009FF9F0 /* Build configuration list for PBXNativeTarget "KeyChainExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

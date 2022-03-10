@@ -9,50 +9,73 @@
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
-		<key>ExampleProject.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
-		</dict>
-		<key>KeyChainExample.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>21</integer>
-		</dict>
-		<key>Location.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
-		</dict>
-		<key>Plist.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
-		</dict>
-		<key>RemoteNotification.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>18</integer>
-		</dict>
-		<key>TimeTracker.xcscheme_^#shared#^_</key>
+		<key>DeepLinkExample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>20</integer>
 		</dict>
-		<key>TwoWayBidingHTMLNative.xcscheme_^#shared#^_</key>
+		<key>ExampleProject.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>KeyChainExample.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
+		<key>Location.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>21</integer>
+		</dict>
+		<key>Plist.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>19</integer>
 		</dict>
-		<key>UniversalLinks.xcscheme_^#shared#^_</key>
+		<key>RemoteNotification.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>16</integer>
+		</dict>
+		<key>TimeTracker.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>TwoWayBidingHTMLNative.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>UniversalLinks.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
 		</dict>
 		<key>WebviewHTML.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>12</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5E3256A227DA4BAB000C530B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E3256D727DA4C10000C530B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A42338442727A9D0002A42C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
