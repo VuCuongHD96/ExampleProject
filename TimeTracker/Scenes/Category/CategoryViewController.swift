@@ -26,4 +26,5 @@ final class CategoryViewController: UIViewController {
         super.viewDidDisappear(animated)
         timerManager.stopTimer(screenName: "CategoryViewController")
     }
+
 }
