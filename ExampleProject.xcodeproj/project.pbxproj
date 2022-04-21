@@ -131,6 +131,7 @@
 		A4F2BBC6275DF87300BE04DB /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = A4F2BBC4275DF87300BE04DB /* index.html */; };
 		A4F2BBC7275DF87300BE04DB /* Login.css in Resources */ = {isa = PBXBuildFile; fileRef = A4F2BBC5275DF87300BE04DB /* Login.css */; };
 		A4F2BBCD275E15B700BE04DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F2BBCC275E15B700BE04DB /* User.swift */; };
+		A4FE7FF72811403B00D48AFE /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FE7FF62811403B00D48AFE /* ImageManager.swift */; };
 		EB5E1CDEDF56766707D9B6F9 /* Pods_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C718F3D7B9587373E613BAF3 /* Pods_Location.framework */; };
 		EDD4D1E1806F19C42CEC9487 /* Pods_RemoteNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550F00B34A31A1054053E3CA /* Pods_RemoteNotification.framework */; };
 /* End PBXBuildFile section */
@@ -296,6 +297,7 @@
 		A4F2BBC4275DF87300BE04DB /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		A4F2BBC5275DF87300BE04DB /* Login.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = Login.css; sourceTree = "<group>"; };
 		A4F2BBCC275E15B700BE04DB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A4FE7FF62811403B00D48AFE /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		B5399DFCEB632F063C702EE6 /* Pods-ExampleProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleProject.debug.xcconfig"; path = "Target Support Files/Pods-ExampleProject/Pods-ExampleProject.debug.xcconfig"; sourceTree = "<group>"; };
 		B5B699AA0ECF01EE2D53B434 /* Pods-TimeTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeTracker.release.xcconfig"; path = "Target Support Files/Pods-TimeTracker/Pods-TimeTracker.release.xcconfig"; sourceTree = "<group>"; };
 		C718F3D7B9587373E613BAF3 /* Pods_Location.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Location.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -841,6 +843,7 @@
 				A4BBFC11281115DC00CF63FD /* AppDelegate.swift */,
 				A4BBFC13281115DC00CF63FD /* SceneDelegate.swift */,
 				A4BBFC15281115DC00CF63FD /* ViewController.swift */,
+				A4FE7FF62811403B00D48AFE /* ImageManager.swift */,
 				A4BBFC17281115DC00CF63FD /* Main.storyboard */,
 				A4BBFC1A281115DE00CF63FD /* Assets.xcassets */,
 				A4BBFC1C281115DE00CF63FD /* LaunchScreen.storyboard */,
@@ -1725,6 +1728,7 @@
 				A4BBFC16281115DC00CF63FD /* ViewController.swift in Sources */,
 				A4BBFC12281115DC00CF63FD /* AppDelegate.swift in Sources */,
 				A4BBFC14281115DC00CF63FD /* SceneDelegate.swift in Sources */,
+				A4FE7FF72811403B00D48AFE /* ImageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
