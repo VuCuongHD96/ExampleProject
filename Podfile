@@ -54,3 +54,13 @@ target 'CoreDataExample' do
   # Pods for CoreDataExample
   shareLib
 end
+
+target 'Compression' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CoreDataExample
+  shareLib
+  pod 'GzipSwift'
+  pod 'GZIP'
+end
